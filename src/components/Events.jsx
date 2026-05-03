@@ -34,7 +34,7 @@ function EventCard({ event }) {
       </div>
 
       {/* Event Name */}
-      <div className="bg-bg-card py-3.5 px-4 border-x border-border flex items-center justify-center relative z-20">
+      <div className="bg-bg-card py-3.5 px-4 border-x border-border flex items-center justify-center relative z-20 min-h-[72px]">
         <h3 className="font-display text-[0.95rem] font-[600] text-[#F0E6D3] text-center tracking-[0.06em] flex items-center justify-center gap-3 w-full">
           <span className="h-[1px] bg-gold/30 transition-all duration-500 w-3 group-hover:w-6 group-hover:bg-gold"></span>
           {event.name}

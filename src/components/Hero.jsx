@@ -125,10 +125,10 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="relative z-20 w-full max-w-[1400px] mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-8 lg:gap-12 items-center min-h-[100dvh] pt-24 pb-12 lg:py-0">
+      <div className="relative z-20 w-full max-w-[1400px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] gap-12 items-center">
         
         {/* Left Side: Typography & CTA (Sacred Flame & Gold Typography) */}
-        <div className="flex flex-col items-center lg:items-start text-center lg:text-left perspective-1000">
+        <div className="flex flex-col items-start text-left perspective-1000 pt-10">
           
           {/* Arteza Badge */}
           <div className="inline-flex items-center gap-3 mb-6 stagger-reveal" style={{ animationDelay: '0.1s' }}>
@@ -143,7 +143,7 @@ export default function Hero() {
           </div>
 
           {/* Main Title - Staggered & Gold Shimmer */}
-          <h1 className="font-display text-[clamp(2.5rem,10vw,9rem)] font-bold leading-[0.9] tracking-[2px] lg:tracking-[4px] uppercase mb-4 lg:mb-6 flex flex-wrap justify-center lg:justify-start items-baseline">
+          <h1 className="font-display text-[clamp(4rem,8vw,9rem)] font-bold leading-[0.9] tracking-[4px] uppercase mb-6 flex flex-wrap items-baseline">
             <span className="flex">
               {['K','A','L','A','K','R','I','T','I'].map((char, index) => (
                 <span 
@@ -161,23 +161,23 @@ export default function Hero() {
           </h1>
 
           {/* Decorative Gold Rule */}
-          <div className="w-16 lg:w-20 h-[1.5px] bg-gradient-to-r from-transparent via-[var(--color-gold)] to-transparent lg:from-[var(--color-gold)] lg:to-transparent mb-6 lg:mb-8 stagger-reveal" style={{ animationDelay: '0.95s' }}></div>
+          <div className="w-20 h-[1.5px] bg-gradient-to-r from-[var(--color-gold)] to-transparent mb-8 stagger-reveal" style={{ animationDelay: '0.95s' }}></div>
 
           {/* Tagline */}
-          <p className="font-heading text-xl sm:text-2xl md:text-3xl italic text-white/80 tracking-[1px] lg:tracking-[2px] mb-8 lg:mb-10 max-w-xl leading-snug border-l-0 border-b-[2px] border-b-[var(--color-gold)] lg:border-b-0 lg:border-l-[3px] lg:border-l-[var(--color-gold)] pb-4 lg:pb-0 lg:pl-6 px-4 lg:px-0 stagger-reveal" style={{ animationDelay: '1.0s' }}>
+          <p className="font-heading text-2xl md:text-3xl italic text-white/80 tracking-[2px] mb-10 max-w-xl leading-snug border-l-[3px] border-l-[var(--color-gold)] pl-6 stagger-reveal" style={{ animationDelay: '1.0s' }}>
             Bringing Forth the Revolution Through Art
           </p>
 
           {/* Micro-cards Stats (Gold Border) */}
-          <div className="flex flex-wrap justify-center lg:justify-start items-center gap-6 lg:gap-8 mb-10 lg:mb-12 stagger-reveal" style={{ animationDelay: '1.1s' }}>
-            <div className="flex flex-col items-center lg:items-start border-t border-t-[var(--color-gold)] pt-3 w-28 lg:w-32">
-              <span className="font-display text-[28px] lg:text-[32px] font-bold text-white leading-none mb-1">1</span>
-              <span className="font-mono text-[8px] lg:text-[9px] tracking-[2px] lg:tracking-[3px] text-text-muted uppercase text-center lg:text-left">Grand Day</span>
+          <div className="flex flex-wrap items-center gap-8 mb-12 stagger-reveal" style={{ animationDelay: '1.1s' }}>
+            <div className="flex flex-col items-start border-t border-t-[var(--color-gold)] pt-3 w-32">
+              <span className="font-display text-[32px] font-bold text-white leading-none mb-1">1</span>
+              <span className="font-mono text-[9px] tracking-[3px] text-text-muted uppercase">Grand Day</span>
             </div>
             
-            <div className="flex flex-col items-center lg:items-start border-t border-t-[var(--color-gold)] pt-3 w-28 lg:w-32">
-              <span className="font-display text-[28px] lg:text-[32px] font-bold text-white leading-none mb-1">20+</span>
-              <span className="font-mono text-[8px] lg:text-[9px] tracking-[2px] lg:tracking-[3px] text-text-muted uppercase text-center lg:text-left">Events</span>
+            <div className="flex flex-col items-start border-t border-t-[var(--color-gold)] pt-3 w-32">
+              <span className="font-display text-[32px] font-bold text-white leading-none mb-1">20+</span>
+              <span className="font-mono text-[9px] tracking-[3px] text-text-muted uppercase">Events</span>
             </div>
           </div>
 
@@ -196,10 +196,10 @@ export default function Hero() {
         </div>
 
         {/* Right Side: 3D Floating Avatar with Parallax */}
-        <div className="relative w-full h-[50vh] min-h-[350px] lg:h-[70vh] lg:min-h-[600px] flex items-center justify-center perspective-1000 mt-0 lg:mt-0">
+        <div className="relative w-full h-[70vh] min-h-[600px] flex items-center justify-center perspective-1000 mt-10 lg:mt-0">
           
           <div 
-            className="relative w-[90%] max-w-[320px] sm:max-w-[400px] lg:max-w-[550px] aspect-square flex items-center justify-center transform-3d animate-float-3d"
+            className="relative w-full max-w-[550px] aspect-square flex items-center justify-center transform-3d animate-float-3d"
             style={{ transform: `translateY(${scrollY * -0.15}px)` }}
           >
             
@@ -207,11 +207,11 @@ export default function Hero() {
             <img 
               src="/Herobg/avatar.png" 
               alt="Kalakriti '26" 
-              className="relative z-20 w-[85%] lg:w-[90%] h-auto object-contain drop-shadow-[0_0_50px_rgba(139,0,0,0.6)] filter contrast-[1.15]"
+              className="relative z-20 w-[90%] h-auto object-contain drop-shadow-[0_0_50px_rgba(139,0,0,0.6)] filter contrast-[1.15]"
             />
             
             {/* Master Orbiting Ring */}
-            <div className="absolute inset-0 sm:inset-[5%] lg:inset-[15%] z-30 pointer-events-none" style={{ animation: 'spin 40s linear infinite' }}>
+            <div className="absolute inset-[15%] z-30 pointer-events-none" style={{ animation: 'spin 40s linear infinite' }}>
               {orbitingElements.map((el, i) => {
                 const angle = i * (360 / 5); // 0, 72, 144, 216, 288
                 
@@ -254,8 +254,8 @@ export default function Hero() {
       </div>
 
       {/* Floating Audio Toggle */}
-      <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 z-50 flex items-center gap-3 md:gap-4 stagger-reveal" style={{ animationDelay: '1.5s' }}>
-        <span className="font-mono text-[8px] md:text-[9px] tracking-[2px] md:tracking-[3px] text-white/50 uppercase hidden sm:block">
+      <div className="absolute bottom-10 right-10 z-50 flex items-center gap-4 stagger-reveal" style={{ animationDelay: '1.5s' }}>
+        <span className="font-mono text-[9px] tracking-[3px] text-white/50 uppercase">
           {isPlaying ? 'Sound On' : 'Sound Off'}
         </span>
         <button 
