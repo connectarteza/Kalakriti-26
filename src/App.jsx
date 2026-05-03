@@ -8,8 +8,13 @@ import EventDetails from './pages/EventDetails';
 import OrganisingCommittee from './pages/OrganisingCommittee';
 
 export default function App() {
+  if (window.location.pathname === '/') {
+    window.location.replace('/kalakriti-26/');
+    return null;
+  }
+
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/kalakriti-26">
       <Preloader />
       <Navbar />
       <Routes>
