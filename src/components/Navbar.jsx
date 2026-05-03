@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 
 const NAV_ITEMS = [
   { id: 'home', label: 'Home' },
@@ -13,6 +13,19 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const [popupOpen, setPopupOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setPopupOpen(false);
+      }
+    };
+    if (popupOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [popupOpen]);
 
   useEffect(() => {
     const onScroll = () => {
@@ -73,34 +86,97 @@ export default function Navbar() {
         </ul>
 
         {/* Right — Register Button + Dropdown */}
-        <div className="hidden md:flex justify-end relative">
+        <div className="hidden md:flex justify-end relative" ref={dropdownRef}>
           <button
-            className="register-btn text-[0.65rem] font-semibold tracking-[3px] uppercase py-2.5 px-7 cursor-pointer font-mono rounded-full"
+            className="register-btn flex items-center gap-2 text-[0.65rem] font-semibold tracking-[3px] uppercase py-2.5 pl-7 pr-5 cursor-pointer font-mono rounded-full"
             onClick={() => setPopupOpen((p) => !p)}
           >
             Register
+            <i className={`ri-arrow-down-s-line text-sm transition-transform duration-300 ${popupOpen ? '-rotate-180' : ''}`} />
           </button>
 
-          {/* Small dropdown */}
-          {popupOpen && (
-            <div className="absolute top-full right-0 mt-2 w-60 bg-bg-card border border-border shadow-[0_8px_30px_rgba(0,0,0,0.5)] z-[1002] overflow-hidden">
+          {/* Premium Dropdown */}
+          <div 
+            className={`absolute top-[calc(100%+12px)] right-0 w-[280px] bg-bg-card border border-border shadow-[0_16px_40px_rgba(0,0,0,0.8)] z-[1002] transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] origin-top-right ${
+              popupOpen ? 'opacity-100 scale-100 translate-y-0 pointer-events-auto visible' : 'opacity-0 scale-95 -translate-y-2 pointer-events-none invisible'
+            }`}
+          >
+            {/* Gold top accent bar */}
+            <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[var(--color-gold)] to-transparent opacity-80" />
+
+            {/* Corner Ornaments */}
+            <div className="absolute inset-1 pointer-events-none z-20">
+              <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-[var(--color-gold)]/40"></span>
+              <span className="absolute top-0 right-0 w-2 h-2 border-t border-r border-[var(--color-gold)]/40"></span>
+              <span className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-[var(--color-gold)]/40"></span>
+              <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-[var(--color-gold)]/40"></span>
+            </div>
+
+            {/* — REGISTER — header */}
+            <div className="flex items-center justify-center pt-5 pb-3">
+              <div className="h-[1px] bg-[var(--color-gold)]/30 w-6"></div>
+              <span className="mx-3 text-[10px] text-[var(--color-gold)] font-mono uppercase tracking-[3px]">Register</span>
+              <div className="h-[1px] bg-[var(--color-gold)]/30 w-6"></div>
+            </div>
+
+            {/* Options */}
+            <div className="flex flex-col relative z-10 pb-2">
+              {/* Participant */}
               <button
-                className="w-full text-center font-display text-[0.7rem] font-bold tracking-[1.5px] uppercase py-4 px-5 text-accent bg-transparent border-none cursor-pointer transition-colors duration-200 hover:bg-accent/10"
+                className="group relative w-full text-left flex items-center gap-4 py-4 px-6 bg-transparent border-none cursor-pointer transition-colors duration-300 overflow-hidden hover:bg-white/[0.02]"
                 onClick={() => { setPopupOpen(false); scrollTo('events'); }}
               >
-                Participant Registration
+                {/* Glow sweep */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_0%_50%,rgba(201,168,76,0.1)_0%,transparent_50%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                
+                {/* Icon */}
+                <div className="w-9 h-9 shrink-0 flex items-center justify-center rounded-full border border-border bg-surface text-[var(--color-gold)] text-sm group-hover:border-[var(--color-gold)]/60 group-hover:text-[var(--color-gold)] transition-colors duration-300 relative z-10">
+                  <i className="ri-user-add-line" />
+                </div>
+                
+                {/* Text */}
+                <div className="flex-1 relative z-10">
+                  <div className="font-display text-[0.7rem] font-bold tracking-[1px] uppercase text-white mb-0.5">Participant</div>
+                  <div className="text-[10px] text-text-muted font-body">Register for an event</div>
+                </div>
+                
+                {/* Animated Arrow */}
+                <i className="ri-arrow-right-line text-[var(--color-gold)] opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 relative z-10" />
               </button>
-              <div className="h-px bg-border mx-4"></div>
+
+              <div className="h-px bg-border/50 mx-6"></div>
+
+              {/* Representative */}
               <a
-                href="https://forms.google.com"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdnXnSzhdwtj_7limcEhTA6AxYp-XVjqCOUgUL882DRgoF68A/viewform?usp=dialog"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center font-display text-[0.7rem] font-bold tracking-[1.5px] uppercase py-4 px-5 text-accent bg-transparent cursor-pointer transition-colors duration-200 hover:bg-accent/10"
+                className="group relative w-full text-left flex items-center gap-4 py-4 px-6 bg-transparent cursor-pointer transition-colors duration-300 overflow-hidden hover:bg-white/[0.02]"
               >
-                Representative Registration
+                {/* Glow sweep */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_0%_50%,rgba(192,57,43,0.1)_0%,transparent_50%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+                
+                {/* Icon */}
+                <div className="w-9 h-9 shrink-0 flex items-center justify-center rounded-full border border-border bg-surface text-orange-light text-sm group-hover:border-accent/60 group-hover:text-accent transition-colors duration-300 relative z-10">
+                  <i className="ri-group-line" />
+                </div>
+                
+                {/* Text */}
+                <div className="flex-1 relative z-10">
+                  <div className="font-display text-[0.7rem] font-bold tracking-[1px] uppercase text-white mb-0.5">Representative</div>
+                  <div className="text-[10px] text-text-muted font-body">College rep sign-up</div>
+                </div>
+                
+                {/* Animated Arrow */}
+                <i className="ri-arrow-right-line text-accent opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 relative z-10" />
               </a>
             </div>
-          )}
+
+            {/* Footer Micro-text */}
+            <div className="py-2.5 bg-surface/80 text-center border-t border-border">
+              <span className="text-[8px] text-text-dim font-mono tracking-[1px] uppercase">Powered by Arteza · MSIT</span>
+            </div>
+          </div>
         </div>
 
         {/* Mobile Hamburger */}
@@ -139,7 +215,7 @@ export default function Navbar() {
               Participant Registration
             </button>
             <a
-              href="https://forms.google.com"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdnXnSzhdwtj_7limcEhTA6AxYp-XVjqCOUgUL882DRgoF68A/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[0.7rem] font-semibold tracking-[2px] uppercase py-3 px-6 border border-border-hover text-text-muted cursor-pointer font-mono transition-all duration-300 hover:text-white hover:border-accent rounded-full text-center block"

@@ -42,19 +42,33 @@ export default function Contact() {
   const socialRef = useScrollReveal();
 
   return (
-    <section id="contact" className="relative py-24 bg-surface border-t border-border overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-accent/[0.03] blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[300px] h-[300px] rounded-full bg-orange/[0.04] blur-[80px] pointer-events-none" />
+    <section id="contact" className="contact-section relative py-24 border-t border-border overflow-hidden bg-bg">
+      {/* Decorative background elements matching Events section */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-[radial-gradient(ellipse_at_top,rgba(139,0,0,0.60)_0%,transparent_70%)]" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-[radial-gradient(ellipse_at_bottom,rgba(139,0,0,0.55)_0%,transparent_70%)]" />
+        <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-full bg-[radial-gradient(ellipse_at_left,rgba(201,168,76,0.05)_0%,transparent_60%)]" />
+        <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-full bg-[radial-gradient(ellipse_at_right,rgba(139,0,0,0.15)_0%,transparent_60%)]" />
+      </div>
+      {/* Scanline texture */}
+      <div className="absolute inset-0 pointer-events-none z-0 opacity-30 mix-blend-overlay" style={{ background: 'repeating-linear-gradient(transparent, transparent 37px, rgba(255,255,255,0.03) 38px)' }}></div>
 
-      <div className="relative max-w-[1200px] mx-auto px-6">
+      <div className="relative max-w-[1200px] mx-auto px-6 z-10">
         {/* Header */}
         <div className="text-center mb-20" ref={headerRef}>
-          <span className="font-calligraphy text-2xl text-orange-light block mb-2">reach out</span>
-          <h2 className="font-display text-[clamp(1.8rem,4vw,2.8rem)] font-bold text-white leading-tight tracking-[3px] uppercase">
-            Get in <span className="text-accent">Touch</span>
+          <div className="flex items-center justify-center mb-6">
+            <div className="h-[1px] bg-[var(--color-gold)]/30 w-12"></div>
+            <div className="w-1.5 h-1.5 rotate-45 bg-[var(--color-gold)] mx-3"></div>
+            <div className="h-[1px] bg-[var(--color-gold)]/30 w-12"></div>
+          </div>
+          <h2 className="font-display text-[clamp(2.5rem,6vw,4.5rem)] font-bold text-white leading-tight tracking-[-1px] uppercase">
+            Get in Touch
           </h2>
-          <div className="mt-4 mx-auto w-20 h-[1px] bg-gradient-to-r from-transparent via-accent to-transparent" />
+          <div className="flex items-center justify-center mt-6">
+            <div className="h-[1px] bg-[var(--color-gold)]/30 w-16"></div>
+            <div className="w-2 h-2 rotate-45 bg-[var(--color-gold)] mx-3"></div>
+            <div className="h-[1px] bg-[var(--color-gold)]/30 w-16"></div>
+          </div>
         </div>
 
         {/* Contact Cards */}
@@ -62,15 +76,20 @@ export default function Contact() {
           {contactCards.map((card, i) => (
             <div
               key={i}
-              className="contact-card group relative bg-bg-card border border-border rounded-sm overflow-hidden transition-all duration-500 hover:border-border-hover hover:-translate-y-1 hover:shadow-[0_8px_40px_rgba(192,57,43,0.08)]"
+              className={`contact-card group relative bg-[#080606] border ${i === 1 ? 'border-[var(--color-gold)]/30 hover:border-[var(--color-gold)]/60 hover:shadow-[0_8px_40px_rgba(201,168,76,0.15)]' : 'border-border hover:border-border-hover hover:shadow-[0_8px_40px_rgba(192,57,43,0.08)]'} rounded-sm overflow-hidden transition-all duration-500 hover:-translate-y-1`}
             >
               {/* Top gradient bar */}
-              <div className={`h-[2px] w-full bg-gradient-to-r ${card.accent} opacity-40 group-hover:opacity-100 transition-opacity duration-500`} />
+              <div className={`h-[2px] w-full bg-gradient-to-r ${i === 1 ? 'from-[var(--color-gold)] to-yellow-600' : card.accent} opacity-40 group-hover:opacity-100 transition-opacity duration-500`} />
 
-              <div className="p-8">
+              {/* Watermark */}
+              <div className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-display text-[12rem] font-bold opacity-[0.02] group-hover:opacity-[0.06] pointer-events-none transition-all duration-500 z-0 ${i === 1 ? 'text-[var(--color-gold)]' : 'text-accent'}`}>
+                {['I', 'II', 'III'][i]}
+              </div>
+
+              <div className="p-8 relative z-10">
                 {/* Icon + Title */}
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 flex items-center justify-center rounded-full border border-border bg-surface text-orange-light text-lg group-hover:border-accent/40 group-hover:bg-accent/[0.06] transition-all duration-300">
+                  <div className={`w-10 h-10 flex items-center justify-center rounded-full border border-border bg-surface text-lg transition-all duration-300 ${i === 1 ? 'text-[var(--color-gold)] group-hover:border-[var(--color-gold)]/40 group-hover:bg-[var(--color-gold)]/[0.06]' : 'text-orange-light group-hover:border-accent/40 group-hover:bg-accent/[0.06]'}`}>
                     <i className={card.icon} />
                   </div>
                   <h3 className="font-heading text-lg font-semibold text-white tracking-wide">
@@ -88,8 +107,9 @@ export default function Contact() {
                       <span className="text-sm text-text font-body font-medium tracking-wide">{c.name}</span>
                       <a
                         href={`tel:${c.phone.replace(/\s/g, '')}`}
-                        className="text-sm text-text-muted font-body font-mono tracking-wider mt-1 sm:mt-0 transition-colors duration-300 hover:text-accent"
+                        className={`text-sm font-body font-mono tracking-wider mt-1 sm:mt-0 transition-colors duration-300 flex items-center ${i === 1 ? 'text-text-muted hover:text-[var(--color-gold)]' : 'text-text-muted hover:text-accent'}`}
                       >
+                        <i className={`ri-phone-line mr-2 opacity-70 ${i === 1 ? 'text-[var(--color-gold)]' : 'text-accent'}`} />
                         {c.phone}
                       </a>
                     </li>
@@ -98,8 +118,8 @@ export default function Contact() {
 
                 {/* Decorative corner */}
                 <div className="absolute bottom-0 right-0 w-16 h-16 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-                  <div className="absolute bottom-2 right-2 w-6 h-[1px] bg-accent/30" />
-                  <div className="absolute bottom-2 right-2 w-[1px] h-6 bg-accent/30" />
+                  <div className={`absolute bottom-2 right-2 w-6 h-[1px] ${i === 1 ? 'bg-[var(--color-gold)]/30' : 'bg-accent/30'}`} />
+                  <div className={`absolute bottom-2 right-2 w-[1px] h-6 ${i === 1 ? 'bg-[var(--color-gold)]/30' : 'bg-accent/30'}`} />
                 </div>
               </div>
             </div>
@@ -107,8 +127,12 @@ export default function Contact() {
         </div>
 
         {/* Social Links */}
-        <div className="flex flex-col items-center gap-6" ref={socialRef}>
-          <span className="text-xs text-text-dim font-mono uppercase tracking-[4px]">Follow us</span>
+        <div className="flex flex-col items-center gap-6 group" ref={socialRef}>
+          <div className="flex items-center gap-4 mb-2">
+            <div className="h-[1px] bg-[var(--color-gold)]/30 w-12 transition-all duration-500 group-hover:w-20 group-hover:bg-[var(--color-gold)]" />
+            <span className="text-xs text-text-dim font-mono uppercase tracking-[4px] transition-colors duration-500 group-hover:text-[var(--color-gold)]">Follow Us</span>
+            <div className="h-[1px] bg-[var(--color-gold)]/30 w-12 transition-all duration-500 group-hover:w-20 group-hover:bg-[var(--color-gold)]" />
+          </div>
           <div className="flex gap-4">
             {socials.map((social, i) => (
               <a
@@ -117,9 +141,11 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="group/icon w-12 h-12 flex items-center justify-center border border-border rounded-full text-xl text-text-muted transition-all duration-300 hover:border-accent hover:text-accent hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(192,57,43,0.15)]"
+                className="group/icon relative w-12 h-12 flex items-center justify-center border border-border rounded-none text-xl text-text-muted transition-all duration-300 hover:border-[var(--color-gold)] hover:text-[var(--color-gold)] hover:-translate-y-1 overflow-hidden"
               >
-                <i className={social.icon} />
+                {/* Radial Glow inside square */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--color-gold)_0%,transparent_70%)] opacity-0 group-hover/icon:opacity-15 transition-opacity duration-300 pointer-events-none" />
+                <i className={`${social.icon} relative z-10`} />
               </a>
             ))}
           </div>

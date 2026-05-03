@@ -92,12 +92,17 @@ export default function Hero() {
   };
 
   const orbitingElements = [
-    { label: 'Videography', icon: 'ri-clapperboard-line', color: 'text-orange-light' },
-    { label: 'Photography', icon: 'ri-camera-lens-line', color: 'text-white' },
-    { label: 'Visual Arts', icon: 'ri-palette-line', color: 'text-gold' },
-    { label: 'Performing Arts', icon: 'ri-mic-line', color: 'text-accent' },
-    { label: 'Literary', icon: 'ri-quill-pen-line', color: 'text-cream' },
+    { label: 'Videography', icon: 'ri-clapperboard-line', color: 'text-orange-light', category: 'videography' },
+    { label: 'Photography', icon: 'ri-camera-lens-line', color: 'text-white', category: 'photography' },
+    { label: 'Visual Arts', icon: 'ri-palette-line', color: 'text-[var(--color-gold)]', category: 'visual' },
+    { label: 'Performing Arts', icon: 'ri-mic-line', color: 'text-accent', category: 'performing' },
+    { label: 'Literary', icon: 'ri-quill-pen-line', color: 'text-cream', category: 'writing' },
   ];
+
+  const handleCategoryClick = (category) => {
+    scrollTo('events');
+    window.dispatchEvent(new CustomEvent('filter-events', { detail: category }));
+  };
 
   return (
     <section
@@ -223,7 +228,7 @@ export default function Hero() {
                       <div style={{ transform: `rotate(-${angle}deg)`, width: '100%', height: '100%' }}>
                         
                         {/* 2. Counter-rotate the master spin to stay upright */}
-                        <div className="w-full h-full flex flex-col items-center gap-2 group cursor-pointer hover:scale-110 transition-transform" style={{ animation: 'spin-reverse 40s linear infinite' }} onClick={() => scrollTo('events')}>
+                        <div className="w-full h-full flex flex-col items-center gap-2 group cursor-pointer hover:scale-110 transition-transform" style={{ animation: 'spin-reverse 40s linear infinite' }} onClick={() => handleCategoryClick(el.category)}>
                           
                           <div className="w-12 h-12 rounded-full bg-[#111111]/80 backdrop-blur-md border border-[var(--color-gold)]/40 flex items-center justify-center shadow-[0_0_25px_rgba(201,168,76,0.25)] group-hover:border-[var(--color-gold)] transition-colors relative">
                             <i className={`${el.icon} text-xl ${el.color} relative z-10`}></i>
