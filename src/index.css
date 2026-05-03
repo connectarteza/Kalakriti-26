@@ -2,23 +2,23 @@
 
 /* ===== TAILWIND v4 THEME — Red / White / Orange ===== */
 @theme {
-  --color-bg: #0f0608;
-  --color-bg-card: #1a1010;
-  --color-surface: #160c0c;
+  --color-bg: #050203;
+  --color-bg-card: #120909;
+  --color-surface: #0e0707;
   --color-border: #2a1a1a;
-  --color-border-hover: #3d2525;
-  --color-text: #f5f5f5;
-  --color-text-muted: #aaaaaa;
-  --color-text-dim: #555555;
-  --color-accent: #8B0000;
+  --color-border-hover: #4a2a2a;
+  --color-text: #ffffff;
+  --color-text-muted: #cccccc;
+  --color-text-dim: #777777;
+  --color-accent: #9a0000;
   /* Dark Cinematic Red */
-  --color-accent-hover: #c0392b;
-  --color-accent-glow: rgba(139, 0, 0, 0.4);
-  --color-gold: #C9A84C;
+  --color-accent-hover: #d32f2f;
+  --color-accent-glow: rgba(154, 0, 0, 0.5);
+  --color-gold: #DEBA55;
   /* Antique Gold */
-  --color-orange: #d35400;
-  --color-orange-light: #e67e22;
-  --color-cream: #f5e6d3;
+  --color-orange: #e65c00;
+  --color-orange-light: #f39c12;
+  --color-cream: #fdf6e3;
 
   --font-display: 'Cinzel Decorative', 'Cinzel', serif;
   --font-heading: 'Cormorant Garamond', 'Cinzel', Georgia, serif;
@@ -487,7 +487,7 @@ ul {
   position: absolute;
   inset: 0;
   background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-  opacity: 0.04;
+  opacity: 0.02;
   pointer-events: none;
   z-index: 5;
 }
