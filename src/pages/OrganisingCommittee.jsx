@@ -39,7 +39,7 @@ export default function OrganisingCommittee() {
       <div className="max-w-[1400px] mx-auto px-6 relative z-10">
         <div className="mb-8">
           <Link 
-            to="/"
+            to="kalakriti/"
             className="inline-flex items-center gap-2 text-[var(--color-gold)]/70 hover:text-[var(--color-gold)] transition-colors font-mono text-[10px] tracking-[3px] uppercase group"
           >
             <i className="ri-arrow-left-line text-sm transition-transform group-hover:-translate-x-1"></i> Back to Home
