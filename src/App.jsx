@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import BackToTop from './components/BackToTop';
 import Home from './pages/Home';
 import EventDetails from './pages/EventDetails';
+import OrganisingCommittee from './pages/OrganisingCommittee';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events/:eventName" element={<EventDetails />} />
+        <Route path="/organising-committee" element={<OrganisingCommittee />} />
       </Routes>
       <Footer />
       <BackToTop />

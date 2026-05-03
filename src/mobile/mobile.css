@@ -1,0 +1,201 @@
+/* 
+  Global Responsive Overrides for Mobile View 
+  This stylesheet applies only when window width < 1024px.
+*/
+
+.mobile-view-wrapper {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* =========================================================================
+   1. HERO SECTION
+   ========================================================================= */
+.mobile-view-wrapper #home .grid {
+  grid-template-columns: 1fr !important;
+  gap: 2rem !important;
+  text-align: center;
+}
+
+.mobile-view-wrapper #home .flex-col {
+  align-items: center !important;
+  text-align: center !important;
+}
+
+/* Make Hero Title Responsive */
+.mobile-view-wrapper #home h1 {
+  font-size: clamp(3rem, 10vw, 5rem) !important;
+  line-height: 1 !important;
+  margin-top: 4rem;
+}
+
+.mobile-view-wrapper #home p.text-lg {
+  font-size: 1rem !important;
+  max-width: 90% !important;
+  margin: 0 auto !important;
+}
+
+/* Adjust 3D elements in Hero */
+.mobile-view-wrapper #home .relative.w-full.h-full {
+  height: 400px !important;
+  margin-top: 2rem !important;
+}
+
+.mobile-view-wrapper #home .absolute.top-\[-10\%\],
+.mobile-view-wrapper #home .absolute.bottom-\[-10\%\] {
+  display: none !important; /* Hide floating secondary objects on mobile to save space */
+}
+
+/* =========================================================================
+   2. ABOUT SECTION
+   ========================================================================= */
+.mobile-view-wrapper #about {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+.mobile-view-wrapper #about h2 {
+  font-size: clamp(1.8rem, 7vw, 2.5rem) !important;
+  margin-bottom: 1rem !important;
+}
+
+.mobile-view-wrapper #about p {
+  font-size: 0.85rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 1rem !important;
+}
+
+.mobile-view-wrapper #about .grid {
+  grid-template-columns: 1fr !important;
+  gap: 2rem !important;
+}
+
+.mobile-view-wrapper #about .max-w-2xl {
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+/* Compact stats row */
+.mobile-view-wrapper #about .flex.items-center.gap-12 {
+  flex-wrap: wrap !important;
+  gap: 1rem !important;
+  justify-content: center !important;
+  margin-top: 1.5rem !important;
+}
+
+.mobile-view-wrapper #about .text-\[3\.5rem\] {
+  font-size: 2rem !important;
+}
+
+.mobile-view-wrapper #about .text-sm {
+  font-size: 0.65rem !important;
+}
+
+/* Image container */
+.mobile-view-wrapper #about .aspect-square {
+  max-width: 250px !important;
+  margin: 0 auto !important;
+}
+
+/* =========================================================================
+   3. SCHEDULE & BROCHURE SECTION
+   ========================================================================= */
+.mobile-view-wrapper #schedule .grid-cols-4 {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 1.5rem !important;
+}
+
+.mobile-view-wrapper #schedule .flex.items-center.gap-8 {
+  flex-direction: column !important;
+  gap: 1rem !important;
+  width: 100%;
+}
+
+.mobile-view-wrapper #schedule .flex.items-center.gap-8 a {
+  width: 100% !important;
+  text-align: center !important;
+  justify-content: center !important;
+}
+
+/* =========================================================================
+   4. EVENTS SECTION
+   ========================================================================= */
+.mobile-view-wrapper #events .flex.flex-wrap {
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.mobile-view-wrapper #events .flex.flex-wrap > div {
+  width: 100% !important;
+  max-width: 350px !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Align buttons evenly in cards if text varies */
+.mobile-view-wrapper .event-card-lift {
+  height: auto !important;
+}
+
+/* Filter tabs responsiveness */
+.mobile-view-wrapper #events .flex.flex-wrap.justify-center.gap-4 {
+  gap: 0.5rem !important;
+}
+
+.mobile-view-wrapper #events button.font-mono {
+  padding: 0.5rem 1rem !important;
+  font-size: 0.65rem !important;
+}
+
+/* =========================================================================
+   5. NAVBAR
+   ========================================================================= */
+/* The hamburger menu handles most of this already, just ensuring the logo fits */
+.mobile-view-wrapper nav .text-xl {
+  font-size: 1.1rem !important;
+}
+
+/* =========================================================================
+   6. CONTACT & FOOTER SECTION
+   ========================================================================= */
+.mobile-view-wrapper #contact .grid {
+  grid-template-columns: 1fr !important;
+  gap: 2rem !important;
+}
+
+.mobile-view-wrapper #contact h2 {
+  font-size: clamp(2.5rem, 8vw, 4rem) !important;
+}
+
+/* Footer Brand Stacking */
+.mobile-view-wrapper footer .flex.gap-5 {
+  flex-direction: column !important;
+  gap: 1.5rem !important;
+}
+
+/* Change vertical divider to horizontal */
+.mobile-view-wrapper footer .w-\[1px\].h-\[100px\] {
+  width: 80px !important;
+  height: 1px !important;
+  background: linear-gradient(to right, transparent, rgba(201,168,76,0.6), transparent) !important;
+}
+
+/* Center typography group */
+.mobile-view-wrapper footer .flex-col.items-start {
+  align-items: center !important;
+}
+
+.mobile-view-wrapper footer .w-\[80\%\] {
+  width: 100% !important;
+  background: linear-gradient(to right, transparent, var(--color-gold), transparent) !important;
+}
+
+/* =========================================================================
+   7. EVENT DETAILS PAGE
+   ========================================================================= */
+.mobile-view-wrapper .lg\:grid-cols-\[1fr_1\.2fr\] {
+  grid-template-columns: 1fr !important;
+}
+
+.mobile-view-wrapper .lg\:w-full {
+  width: 100% !important;
+}

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import { EVENTS } from '../data/events';
 
 export default function EventDetails() {
@@ -46,6 +46,15 @@ export default function EventDetails() {
         <div className="absolute top-1/2 left-0 w-[400px] h-[600px] -translate-y-1/2 bg-[radial-gradient(ellipse_at_left,rgba(201,168,76,0.1)_0%,transparent_60%)]" />
         {/* Scanline overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:100%_38px] opacity-20" />
+      </div>
+
+      <div className="max-w-[1200px] mx-auto px-6 relative z-10 mb-8">
+        <Link 
+          to="/"
+          className="inline-flex items-center gap-2 text-[var(--color-gold)]/70 hover:text-[var(--color-gold)] transition-colors font-mono text-[10px] tracking-[3px] uppercase group"
+        >
+          <i className="ri-arrow-left-line text-sm transition-transform group-hover:-translate-x-1"></i> Back to Home
+        </Link>
       </div>
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-12 lg:gap-20 items-start">
