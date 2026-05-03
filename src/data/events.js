@@ -97,7 +97,7 @@ export const EVENTS = [
     id: 4, 
     name: 'Shutter Hunt', 
     category: 'photography', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/Shutterhunt.png', 
     link: 'https://docs.google.com/forms/d/1X2qkPng1cw4WHyOwc-jTq5bHCNlq8K-2s8C92s8XdY0/viewform', 
     badge: 'Offline',
     guidelines: [
@@ -122,7 +122,7 @@ export const EVENTS = [
     id: 6, 
     name: 'Lens Gallery', 
     category: 'photography', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/Lens Gallary.png', 
     link: 'https://docs.google.com/forms/d/1Y3EGKck6kPMVg0PsqaUgBqS5_6Cpv63zFKPuzPAwzLE/viewform', 
     badge: 'Online / Offline Exhib.',
     guidelines: [
@@ -246,7 +246,7 @@ export const EVENTS = [
     id: 11, 
     name: 'Lights, Camera, Recreate!', 
     category: 'visual', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/Lights Camera recreate.png', 
     link: '#', 
     badge: 'Online',
     guidelines: [
@@ -267,7 +267,7 @@ export const EVENTS = [
     id: 12, 
     name: 'Laugh Lines', 
     category: 'visual', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/LaughLines.png', 
     link: '#', 
     badge: 'Offline',
     guidelines: [
@@ -313,7 +313,7 @@ export const EVENTS = [
     id: 14, 
     name: 'Impromptu', 
     category: 'writing', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/impromptu.png', 
     link: 'https://docs.google.com/forms/d/1_AsxksblvOnH1gwIqZ0Cbu-ULj-t5zhAPmsJstWT0YA/viewform', 
     badge: 'Offline',
     guidelines: [
@@ -337,7 +337,7 @@ export const EVENTS = [
     id: 15, 
     name: 'Clashpoint', 
     category: 'writing', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/clashpoint.png', 
     link: 'https://docs.google.com/forms/d/1aw6vvPSf21xh9fVMFuvaobUBZhrhxMh-FaZ-eGo7Mtw/viewform', 
     badge: 'Offline',
     guidelines: [
@@ -362,7 +362,7 @@ export const EVENTS = [
     id: 16, 
     name: 'Oratoria', 
     category: 'writing', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/Oratoria.png', 
     link: 'https://docs.google.com/forms/d/14-GeGI92IsUjdVijZfZbyVLF24yNWHaMTcyCra_bwUg/viewform', 
     badge: 'Offline',
     guidelines: [

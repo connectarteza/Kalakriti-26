@@ -61,13 +61,13 @@ export default function EventDetails() {
         
         {/* Left Side: Floating Poster */}
         <div className="flex flex-col items-center">
-          <div className="relative w-[85%] sm:w-[70%] lg:w-full aspect-[3/4] animate-float-3d perspective-1000">
+          <div className="relative w-[85%] sm:w-[70%] lg:w-full animate-float-3d perspective-1000">
             {/* The Poster */}
-            <div className="absolute inset-0 bg-[#080606] border border-border shadow-[0_0_50px_rgba(139,0,0,0.3)] overflow-hidden rounded-md group">
+            <div className="relative bg-[#080606] border border-border shadow-[0_0_50px_rgba(139,0,0,0.3)] overflow-hidden rounded-md group">
               <img 
                 src={event.poster} 
                 alt={event.name} 
-                className="w-full h-full object-contain filter contrast-[1.1]"
+                className="w-full h-auto object-contain filter contrast-[1.1]"
               />
               {/* Corner Ornaments */}
               <div className="absolute inset-2 pointer-events-none z-20">
