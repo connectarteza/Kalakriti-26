@@ -2,12 +2,11 @@ import { useState, useEffect, useRef } from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 function CountUp({ end, duration = 1200 }) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(() => end === '∞' ? '∞' : 0);
   const ref = useRef(null);
   
   useEffect(() => {
     if (end === '∞') {
-      setCount('∞');
       return;
     }
     const endVal = parseInt(end);

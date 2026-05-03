@@ -1,4 +1,4 @@
-import { useMemo, useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0);
@@ -76,7 +76,7 @@ export default function Hero() {
     }
   };
 
-  const particles = useMemo(() => {
+  const [particles] = useState(() => {
     return Array.from({ length: 30 }, (_, i) => ({
       id: i,
       left: `${Math.random() * 100}%`,
@@ -84,7 +84,7 @@ export default function Hero() {
       delay: `${Math.random() * 6}s`,
       duration: `${4 + Math.random() * 4}s`,
     }));
-  }, []);
+  });
 
   const scrollTo = (id) => {
     const el = document.getElementById(id);
