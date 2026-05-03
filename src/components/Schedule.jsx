@@ -79,43 +79,43 @@ export default function Schedule() {
           <div className="w-full max-w-[560px] h-[3px] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik00IDBMOCA0TDQgOEwwIDRaIiBmaWxsPSIjQzlBODRDIiBmaWxsLW9wYWNpdHk9IjEuMCIvPjwvc3ZnPg==')] bg-repeat-x opacity-30 mb-10"></div>
 
           {/* Stats Box */}
-          <div className="grid grid-cols-4 w-full max-w-[560px] border border-[var(--color-gold)]/45 rounded-sm mb-12 relative clip-reveal" style={{ animationDelay: '0.5s' }}>
+          <div className="grid grid-cols-2 sm:grid-cols-4 w-full max-w-[560px] border border-[var(--color-gold)]/45 rounded-sm mb-12 relative clip-reveal" style={{ animationDelay: '0.5s' }}>
             {/* Corner Filigree */}
             <div className="absolute -top-1.5 -left-1.5 w-3 h-3 border-t border-l border-[var(--color-gold)]"></div>
             <div className="absolute -top-1.5 -right-1.5 w-3 h-3 border-t border-r border-[var(--color-gold)]"></div>
             <div className="absolute -bottom-1.5 -left-1.5 w-3 h-3 border-b border-l border-[var(--color-gold)]"></div>
             <div className="absolute -bottom-1.5 -right-1.5 w-3 h-3 border-b border-r border-[var(--color-gold)]"></div>
 
-            <div className="flex flex-col items-center justify-center p-4 border-r border-[var(--color-gold)]/45 transition-colors duration-300 hover:bg-[#3c0404]/30 group">
-              <span className="font-display text-[32px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="20"/>+</span>
+            <div className="flex flex-col items-center justify-center p-4 sm:border-r border-b sm:border-b-0 border-[var(--color-gold)]/45 transition-colors duration-300 hover:bg-[#3c0404]/30 group">
+              <span className="font-display text-[28px] sm:text-[32px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="20"/>+</span>
               <span className="font-mono text-[8px] tracking-[2px] text-white/50 uppercase text-center">Competitions</span>
             </div>
-            <div className="flex flex-col items-center justify-center p-4 border-r border-[var(--color-gold)]/45 transition-colors duration-300 hover:bg-[#3c0404]/30 group">
-              <span className="font-display text-[32px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="5"/></span>
+            <div className="flex flex-col items-center justify-center p-4 border-l sm:border-l-0 sm:border-r border-b sm:border-b-0 border-[var(--color-gold)]/45 transition-colors duration-300 hover:bg-[#3c0404]/30 group">
+              <span className="font-display text-[28px] sm:text-[32px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="5"/></span>
               <span className="font-mono text-[8px] tracking-[2px] text-white/50 uppercase text-center">Art<br/>Domains</span>
             </div>
-            <div className="flex flex-col items-center justify-center p-4 border-r border-[var(--color-gold)]/45 transition-colors duration-300 hover:bg-[#3c0404]/30 group">
-              <span className="font-display text-[32px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="1"/></span>
+            <div className="flex flex-col items-center justify-center p-4 sm:border-r border-[var(--color-gold)]/45 transition-colors duration-300 hover:bg-[#3c0404]/30 group">
+              <span className="font-display text-[28px] sm:text-[32px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="1"/></span>
               <span className="font-mono text-[8px] tracking-[2px] text-white/50 uppercase text-center">Grand<br/>Day</span>
             </div>
-            <div className="flex flex-col items-center justify-center p-4 transition-colors duration-300 hover:bg-[#3c0404]/30 group">
-              <span className="font-display text-[36px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="∞"/></span>
+            <div className="flex flex-col items-center justify-center p-4 border-l sm:border-l-0 transition-colors duration-300 hover:bg-[#3c0404]/30 group">
+              <span className="font-display text-[32px] sm:text-[36px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="∞"/></span>
               <span className="font-mono text-[8px] tracking-[2px] text-white/50 uppercase text-center">Possibilities</span>
             </div>
           </div>
 
           {/* Action Buttons */}
-          <div className="flex items-center gap-8 clip-reveal" style={{ animationDelay: '0.7s' }}>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8 clip-reveal" style={{ animationDelay: '0.7s' }}>
             <a 
               href="#" 
-              className="relative overflow-hidden font-mono text-[11px] font-bold tracking-[4px] uppercase py-4 px-8 bg-transparent text-[var(--color-gold)] border border-[var(--color-gold)] transition-all duration-400 hover:bg-[var(--color-gold)] hover:text-[#0a0404] hover:shadow-[0_0_20px_rgba(201,168,76,0.3)] flex items-center gap-3 group"
+              className="relative overflow-hidden font-mono text-[11px] font-bold tracking-[4px] uppercase py-4 px-8 bg-transparent text-[var(--color-gold)] border border-[var(--color-gold)] transition-all duration-400 hover:bg-[var(--color-gold)] hover:text-[#0a0404] hover:shadow-[0_0_20px_rgba(201,168,76,0.3)] flex items-center gap-3 group w-full sm:w-auto justify-center"
             >
               <i className="ri-book-read-line text-[14px]"></i> View Official Brochure
             </a>
             
             <a 
               href="#" 
-              className="font-mono text-[10px] font-bold tracking-[3px] uppercase text-white/60 hover:text-[var(--color-gold)] transition-colors border-b border-white/20 hover:border-[var(--color-gold)] pb-1"
+              className="font-mono text-[10px] font-bold tracking-[3px] uppercase text-white/60 hover:text-[var(--color-gold)] transition-colors border-b border-white/20 hover:border-[var(--color-gold)] pb-1 w-auto"
             >
               Download PDF
             </a>

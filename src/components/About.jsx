@@ -67,18 +67,18 @@ export default function About() {
           </div>
 
           {/* Huge Gold Stats Row */}
-          <div className="flex justify-center w-full mt-4 pt-10 border-t border-[var(--color-gold)]/30">
-            <div className="flex flex-col items-center px-8 md:px-12 border-r border-white/10">
-              <span className="font-display text-[56px] font-bold text-[var(--color-gold)] leading-[1]">1</span>
-              <span className="font-mono text-[9px] tracking-[4px] text-white/30 uppercase mt-4">Grand Day</span>
+          <div className="flex flex-wrap justify-center w-full mt-4 pt-10 border-t border-[var(--color-gold)]/30 gap-y-8">
+            <div className="flex flex-col items-center px-4 sm:px-8 md:px-12 border-r border-white/10">
+              <span className="font-display text-[40px] md:text-[56px] font-bold text-[var(--color-gold)] leading-[1]">1</span>
+              <span className="font-mono text-[8px] md:text-[9px] tracking-[2px] md:tracking-[4px] text-white/30 uppercase mt-4 text-center">Grand Day</span>
             </div>
-            <div className="flex flex-col items-center px-8 md:px-12 border-r border-white/10">
-              <span className="font-display text-[56px] font-bold text-[var(--color-gold)] leading-[1]">20+</span>
-              <span className="font-mono text-[9px] tracking-[4px] text-white/30 uppercase mt-4">Events</span>
+            <div className="flex flex-col items-center px-4 sm:px-8 md:px-12 border-r border-white/10">
+              <span className="font-display text-[40px] md:text-[56px] font-bold text-[var(--color-gold)] leading-[1]">20+</span>
+              <span className="font-mono text-[8px] md:text-[9px] tracking-[2px] md:tracking-[4px] text-white/30 uppercase mt-4 text-center">Events</span>
             </div>
-            <div className="flex flex-col items-center pl-8 md:pl-12">
-              <span className="font-display text-[32px] mt-4 font-bold text-[var(--color-gold)] leading-[1] mb-[12px]">MSIT</span>
-              <span className="font-mono text-[9px] tracking-[4px] text-white/30 uppercase mt-[2px]">Campus Ground</span>
+            <div className="flex flex-col items-center pl-4 sm:pl-8 md:pl-12">
+              <span className="font-display text-[24px] md:text-[32px] mt-[10px] md:mt-4 font-bold text-[var(--color-gold)] leading-[1] mb-[8px] md:mb-[12px]">MSIT</span>
+              <span className="font-mono text-[8px] md:text-[9px] tracking-[2px] md:tracking-[4px] text-white/30 uppercase mt-[2px] text-center">Campus Ground</span>
             </div>
           </div>
           
