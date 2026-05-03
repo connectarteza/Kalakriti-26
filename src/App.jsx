@@ -9,18 +9,18 @@ import OrganisingCommittee from './pages/OrganisingCommittee';
 
 export default function App() {
   if (window.location.pathname === '/') {
-    window.location.replace('/kalakriti-26/');
+    window.location.replace('kalakriti-26/');
     return null;
   }
 
   return (
-    <BrowserRouter basename="/kalakriti-26">
+    <BrowserRouter basename="kalakriti-26/">
       <Preloader />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/events/:eventName" element={<EventDetails />} />
-        <Route path="/organising-committee" element={<OrganisingCommittee />} />
+        <Route path="events/:eventName/" element={<EventDetails />} />
+        <Route path="organising-committee/" element={<OrganisingCommittee />} />
       </Routes>
       <Footer />
       <BackToTop />
