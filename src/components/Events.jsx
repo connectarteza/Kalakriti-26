@@ -9,7 +9,7 @@ function EventCard({ event }) {
       {/* Poster Image */}
       <div className="relative overflow-hidden bg-bg">
         <img
-          src={event.poster}
+          src={event.poster.startsWith('/') ? `/kalakriti-26${event.poster}` : event.poster}
           alt={event.name}
           className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
           loading="lazy"

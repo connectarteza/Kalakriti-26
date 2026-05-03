@@ -39,7 +39,7 @@ export default function OrganisingCommittee() {
       <div className="max-w-[1400px] mx-auto px-6 relative z-10">
         <div className="mb-8">
           <Link 
-            to="kalakriti/"
+            to="/"
             className="inline-flex items-center gap-2 text-[var(--color-gold)]/70 hover:text-[var(--color-gold)] transition-colors font-mono text-[10px] tracking-[3px] uppercase group"
           >
             <i className="ri-arrow-left-line text-sm transition-transform group-hover:-translate-x-1"></i> Back to Home
@@ -71,7 +71,7 @@ export default function OrganisingCommittee() {
             >
               <div className="absolute inset-0 bg-[#080606] border border-border transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-y-2 group-hover:scale-[1.03] group-hover:border-[var(--color-gold)]/60 group-hover:shadow-[0_15px_40px_rgba(201,168,76,0.25),inset_0_0_20px_rgba(139,0,0,0.1)] overflow-hidden rounded-sm">
                 <img 
-                  src={`/Leads/${lead.file}`}
+                  src={`/kalakriti-26/Leads/${lead.file}`}
                   alt={`Organising Committee Member`}
                   className="w-full h-full object-cover filter contrast-[1.1] transition-transform duration-700 group-hover:scale-[1.05]"
                   loading="lazy"
