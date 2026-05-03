@@ -70,7 +70,7 @@ export default function Schedule() {
 
           <blockquote className="border-l-2 border-[#C0392B] pl-5 py-1 mb-10 clip-reveal" style={{ animationDelay: '0.3s' }}>
             <p className="font-heading text-[16px] text-[rgba(255,255,255,0.58)] leading-[1.8] italic">
-              Discover the complete breakdown of our <span className="text-[var(--color-gold)] not-italic font-medium">16 curated competitions</span>, 
+              Discover the complete breakdown of our <span className="text-[var(--color-gold)] not-italic font-medium">20+ curated competitions</span>, 
               detailed guidelines, scoring rubrics, and official rules for Kalakriti &apos;26.<br/><br/>
               One document. Every answer.
             </p>
@@ -88,11 +88,11 @@ export default function Schedule() {
             <div className="absolute -bottom-1.5 -right-1.5 w-3 h-3 border-b border-r border-[var(--color-gold)]"></div>
 
             <div className="flex flex-col items-center justify-center p-4 border-r border-[var(--color-gold)]/45 transition-colors duration-300 hover:bg-[#3c0404]/30 group">
-              <span className="font-display text-[32px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="16"/></span>
+              <span className="font-display text-[32px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="20"/>+</span>
               <span className="font-mono text-[8px] tracking-[2px] text-white/50 uppercase text-center">Competitions</span>
             </div>
             <div className="flex flex-col items-center justify-center p-4 border-r border-[var(--color-gold)]/45 transition-colors duration-300 hover:bg-[#3c0404]/30 group">
-              <span className="font-display text-[32px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="4"/></span>
+              <span className="font-display text-[32px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="5"/></span>
               <span className="font-mono text-[8px] tracking-[2px] text-white/50 uppercase text-center">Art<br/>Domains</span>
             </div>
             <div className="flex flex-col items-center justify-center p-4 border-r border-[var(--color-gold)]/45 transition-colors duration-300 hover:bg-[#3c0404]/30 group">

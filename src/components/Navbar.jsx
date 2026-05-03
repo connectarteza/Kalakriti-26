@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const NAV_ITEMS = [
   { id: 'home', label: 'Home' },
@@ -43,11 +44,18 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
   const scrollTo = useCallback((id) => {
+    setMobileOpen(false);
+    if (location.pathname !== '/') {
+      navigate('/#' + id);
+      return;
+    }
     const el = document.getElementById(id);
     if (el) window.scrollTo({ top: el.offsetTop - 70, behavior: 'smooth' });
-    setMobileOpen(false);
-  }, []);
+  }, [location, navigate]);
 
   return (
     <>

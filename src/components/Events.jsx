@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { EVENTS, CATEGORIES } from '../data/events';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
@@ -41,16 +42,14 @@ function EventCard({ event }) {
         </h3>
       </div>
 
-      {/* Register Button */}
+      {/* Explore Button */}
       {event.link ? (
-        <a
-          href={event.link}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          to={`/events/${event.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
           className="block w-full text-center font-display text-[0.58rem] font-bold tracking-[0.22em] uppercase py-3.5 bg-accent text-white transition-all duration-300 hover:bg-accent-hover btn-shimmer-sweep"
         >
-          Register Now
-        </a>
+          Explore Event
+        </Link>
       ) : (
         <span className="block w-full text-center font-display text-[0.58rem] font-bold tracking-[0.22em] uppercase py-3.5 bg-border text-text-muted">
           Coming Soon
