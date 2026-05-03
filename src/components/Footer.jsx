@@ -18,7 +18,7 @@ export default function Footer() {
 
         {/* Brand Group */}
         <div className="flex items-center justify-center gap-5 sm:gap-8">
-          <img src="/kalakriti-26/footer/Msit25%20years.png" alt="MSIT 25 Years" className="w-[130px] h-[130px] object-contain" />
+          <img src="/footer/Msit25%20years.png" alt="MSIT 25 Years" className="w-[130px] h-[130px] object-contain" />
           
           <div className="w-[1px] h-[100px] bg-gradient-to-b from-transparent via-[var(--color-gold)]/60 to-transparent"></div>
           

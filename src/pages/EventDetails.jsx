@@ -65,7 +65,7 @@ export default function EventDetails() {
             {/* The Poster */}
             <div className="absolute inset-0 bg-[#080606] border border-border shadow-[0_0_50px_rgba(139,0,0,0.3)] overflow-hidden rounded-md group">
               <img 
-                src={event.poster.startsWith('/') ? `/kalakriti-26${event.poster}` : event.poster} 
+                src={event.poster} 
                 alt={event.name} 
                 className="w-full h-full object-contain filter contrast-[1.1]"
               />

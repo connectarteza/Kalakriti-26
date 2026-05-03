@@ -133,7 +133,7 @@ export default function Hero() {
           {/* Arteza Badge */}
           <div className="inline-flex items-center gap-3 mb-6 stagger-reveal" style={{ animationDelay: '0.1s' }}>
             <img
-              src="/kalakriti-26/Images/arteza-logo.png"
+              src="/Images/arteza-logo.png"
               alt="Arteza"
               className="w-8 h-8 rounded-full border border-white/10"
             />
@@ -205,7 +205,7 @@ export default function Hero() {
             
             {/* Free Floating Avatar Image without card frame */}
             <img 
-              src="/kalakriti-26/Herobg/avatar.png" 
+              src="/Herobg/avatar.png" 
               alt="Kalakriti '26" 
               className="relative z-20 w-[90%] h-auto object-contain drop-shadow-[0_0_50px_rgba(139,0,0,0.6)] filter contrast-[1.15]"
             />
@@ -278,7 +278,7 @@ export default function Hero() {
       {/* Hidden Audio Element */}
       <audio 
         ref={audioRef} 
-        src="/kalakriti-26/mp3/pinkyloll-my-she-wolf-eara_-my-wolf-blood-aj-490559 (1).mp3" 
+        src="/mp3/pinkyloll-my-she-wolf-eara_-my-wolf-blood-aj-490559 (1).mp3" 
         onTimeUpdate={handleTimeUpdate}
         preload="auto"
         autoPlay

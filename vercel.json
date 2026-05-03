@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/kalakriti-26/(.*)",
+      "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
