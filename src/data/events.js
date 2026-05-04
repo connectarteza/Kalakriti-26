@@ -15,7 +15,7 @@ export const EVENTS = [
     id: 1, 
     name: 'Kalpachitro', 
     category: 'videography', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/kalpachitro.png', 
     link: 'https://docs.google.com/forms/d/1N9YNwKCe2u72cc6caD5g65URfJ3T1my7qYnlOPz3DY8/viewform', 
     badge: 'Online / Offline Scr.',
     guidelines: [
@@ -45,7 +45,7 @@ export const EVENTS = [
     id: 2, 
     name: 'Cine-Chorcha', 
     category: 'videography', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/cinecharcha.png', 
     link: 'https://docs.google.com/forms/d/1BXGDqECg3dcB3fk3AR3LITswxffIGl_b1NmwYhvIfBA/viewform', 
     badge: 'Offline',
     guidelines: [
@@ -68,7 +68,7 @@ export const EVENTS = [
     id: 3, 
     name: 'Abhivyakti', 
     category: 'videography', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/abhivyakti.png', 
     link: 'https://docs.google.com/forms/d/1wuUzj-6sqiT4jEFZ6prGP03z0EzK7W6ijRvwgxCwqLo/viewform', 
     badge: 'Online',
     guidelines: [
