@@ -171,7 +171,7 @@ export const EVENTS = [
     id: 8, 
     name: 'ReFrame', 
     category: 'photography', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/reframe.png', 
     link: 'https://docs.google.com/forms/d/1TGto5xqd4Xqip0pwiOc5r1ATfZh1aiDDU2Reuy5IRnU/viewform', 
     badge: 'Online / Offline Scr.',
     guidelines: [
@@ -199,7 +199,7 @@ export const EVENTS = [
     id: 9, 
     name: 'Easel', 
     category: 'visual', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/easel.jpeg', 
     link: '#', 
     badge: 'Offline',
     guidelines: [
@@ -385,7 +385,7 @@ export const EVENTS = [
     id: 17, 
     name: 'Extempo', 
     category: 'writing', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/extempo.png', 
     link: 'https://docs.google.com/forms/d/1CbDf7balJ9oy-ICEUPcLl69H4LToo80Mrcl-hWpAiNs/viewform', 
     badge: 'Offline',
     guidelines: [
@@ -408,7 +408,7 @@ export const EVENTS = [
     id: 18, 
     name: 'Sonance', 
     category: 'writing', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/sonance.png', 
     link: 'https://docs.google.com/forms/d/1aFrphyBHO7WZ-Hh8dKFF-Jcfl1tei4I2F5BNfJtgmIw/viewform', 
     badge: 'Offline',
     guidelines: [
@@ -434,7 +434,7 @@ export const EVENTS = [
     id: 19, 
     name: 'Act it Out', 
     category: 'performing', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/act it out.png', 
     link: 'https://docs.google.com/forms/d/1-xjdt6f08e9vXh3785clzb1JbfEWn8rHhDKF3Bfmv74/viewform?ts=69f0b887', 
     badge: 'Offline',
     guidelines: [
@@ -459,7 +459,7 @@ export const EVENTS = [
     id: 20, 
     name: 'I Laugh You', 
     category: 'performing', 
-    poster: '/Posters/Craftopia.jpeg', 
+    poster: '/Posters/i laugh you.png', 
     link: 'https://docs.google.com/forms/d/1tlK2bQUL251PGbdW7snEGe0IiFbZvZy3axkcR5t_cmA/viewform', 
     badge: 'Offline',
     guidelines: [
