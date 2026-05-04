@@ -199,7 +199,7 @@ export const EVENTS = [
     id: 9, 
     name: 'Easel', 
     category: 'visual', 
-    poster: '/Posters/easel.jpeg', 
+    poster: '/Posters/easel.png', 
     link: '#', 
     badge: 'Offline',
     guidelines: [
