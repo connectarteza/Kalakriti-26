@@ -43,7 +43,7 @@ export const EVENTS = [
   },
   { 
     id: 2, 
-    name: 'Cine-Chorcha', 
+    name: 'Cine-Charcha', 
     category: 'videography', 
     poster: '/Posters/cinecharcha.png', 
     link: 'https://docs.google.com/forms/d/1BXGDqECg3dcB3fk3AR3LITswxffIGl_b1NmwYhvIfBA/viewform', 
