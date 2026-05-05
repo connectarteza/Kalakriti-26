@@ -13,7 +13,7 @@ export const EVENTS = [
   // — Videography —
   { 
     id: 1, 
-    name: 'Kalpachitro', 
+    name: 'Kalpachitra', 
     category: 'videography', 
     poster: '/Posters/KALPACHITRA.png', 
     link: 'https://docs.google.com/forms/d/1N9YNwKCe2u72cc6caD5g65URfJ3T1my7qYnlOPz3DY8/viewform', 
