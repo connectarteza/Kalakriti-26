@@ -4,6 +4,8 @@ import './index.css';
 import App from './App.jsx';
 import MobileApp from './mobile/MobileApp.jsx';
 
+import { Analytics } from '@vercel/analytics/react';
+
 function Root() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
 
@@ -13,7 +15,12 @@ function Root() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  return <StrictMode>{isMobile ? <MobileApp /> : <App />}</StrictMode>;
+  return (
+    <StrictMode>
+      {isMobile ? <MobileApp /> : <App />}
+      <Analytics />
+    </StrictMode>
+  );
 }
 
 createRoot(document.getElementById('root')).render(<Root />);
