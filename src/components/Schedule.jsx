@@ -116,7 +116,7 @@ export default function Schedule() {
             </a>
             
             <a 
-              href="https://drive.google.com/file/d/1RIcH3TrmOw0KO87MqzKoaNptkbT3nWuJ/view?usp=sharing"
+              href="https://drive.google.com/uc?export=download&id=1RIcH3TrmOw0KO87MqzKoaNptkbT3nWuJ"
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono text-[10px] font-bold tracking-[3px] uppercase text-white/60 hover:text-[var(--color-gold)] transition-colors border-b border-white/20 hover:border-[var(--color-gold)] pb-1"

@@ -5,13 +5,13 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 
 function EventCard({ event }) {
   return (
-    <div className="group flex flex-col event-card-lift">
+    <div className="group flex flex-col h-full event-card-lift">
       {/* Poster Image */}
-      <div className="relative overflow-hidden bg-bg">
+      <div className="relative overflow-hidden bg-bg aspect-[3/4]">
         <img
           src={event.poster}
           alt={event.name}
-          className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
         />
         {/* Hover Veil */}
@@ -34,7 +34,7 @@ function EventCard({ event }) {
       </div>
 
       {/* Event Name */}
-      <div className="bg-bg-card py-3.5 px-4 border-x border-border flex items-center justify-center relative z-20 min-h-[72px]">
+      <div className="bg-bg-card py-3.5 px-4 border-x border-border flex items-center justify-center relative z-20 min-h-[72px] flex-grow">
         <h3 className="font-display text-[0.95rem] font-[600] text-[#F0E6D3] text-center tracking-[0.06em] flex items-center justify-center gap-3 w-full">
           <span className="h-[1px] bg-gold/30 transition-all duration-500 w-3 group-hover:w-6 group-hover:bg-gold"></span>
           {event.name}
@@ -46,12 +46,12 @@ function EventCard({ event }) {
       {event.link ? (
         <Link
           to={`/events/${event.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-          className="block w-full text-center font-display text-[0.58rem] font-bold tracking-[0.22em] uppercase py-3.5 bg-accent text-white transition-all duration-300 hover:bg-accent-hover btn-shimmer-sweep"
+          className="block w-full text-center font-display text-[0.58rem] font-bold tracking-[0.22em] uppercase py-3.5 bg-accent text-white transition-all duration-300 hover:bg-accent-hover btn-shimmer-sweep mt-auto"
         >
           Explore Event
         </Link>
       ) : (
-        <span className="block w-full text-center font-display text-[0.58rem] font-bold tracking-[0.22em] uppercase py-3.5 bg-border text-text-muted">
+        <span className="block w-full text-center font-display text-[0.58rem] font-bold tracking-[0.22em] uppercase py-3.5 bg-border text-text-muted mt-auto">
           Coming Soon
         </span>
       )}
