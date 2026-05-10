@@ -10,10 +10,7 @@ import OrganisingCommittee from './pages/OrganisingCommittee';
 import Representatives from './pages/Representatives';
 
 export default function App() {
-  if (window.location.pathname === '/') {
-    window.location.replace('kalakriti-26/');
-    return null;
-  }
+
 
   return (
     <BrowserRouter basename="kalakriti-26/">
