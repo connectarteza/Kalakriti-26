@@ -61,7 +61,7 @@ export default function Navbar() {
     <>
       <nav
         id="navbar"
-        className={`navbar fixed top-0 left-0 w-full z-[1000] grid grid-cols-[auto_1fr_auto] items-center py-[18px] px-8 md:px-10 border-b ${
+        className={`navbar fixed top-0 left-0 w-full z-[1000] flex justify-between items-center py-[18px] px-8 md:px-10 border-b ${
           scrolled
             ? 'scrolled border-border'
             : 'bg-transparent border-transparent'
@@ -77,7 +77,7 @@ export default function Navbar() {
 
         {/* Center — Nav Links */}
         <ul
-          className="hidden md:flex justify-center gap-8"
+          className="hidden md:flex justify-center gap-8 absolute left-1/2 -translate-x-1/2"
         >
           {NAV_ITEMS.map((item) => (
             <li key={item.id}>

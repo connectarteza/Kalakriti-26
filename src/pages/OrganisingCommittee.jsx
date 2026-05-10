@@ -16,6 +16,7 @@ const leads = [
   { id: 12, file: '12_20260503_132646_0011.png' },
   { id: 13, file: '13_20260503_132646_0012.png' },
   { id: 14, file: '14_20260503_132646_0013.png' },
+  { id: 15, file: 'BISHAL.png' },
 ];
 
 export default function OrganisingCommittee() {
