@@ -218,6 +218,15 @@ export default function Navbar() {
             mobileOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
+          {/* Close Button */}
+          <button 
+            className="absolute top-5 right-6 text-text-muted hover:text-[var(--color-gold)] transition-colors duration-300 bg-transparent border-none cursor-pointer p-2"
+            onClick={() => setMobileOpen(false)}
+            aria-label="Close menu"
+          >
+            <i className="ri-close-line text-2xl"></i>
+          </button>
+
           {NAV_ITEMS.map((item) => (
             <button
               key={item.id}
