@@ -103,6 +103,13 @@ export default function Navbar() {
           </button>
 
           <button
+            className="nav-link text-[11px] font-bold uppercase bg-transparent border-none cursor-pointer font-body text-white hover:text-[var(--color-gold)] transition-colors"
+            onClick={() => { navigate('/representatives'); window.scrollTo(0,0); }}
+          >
+            Representatives
+          </button>
+
+          <button
             className="register-btn flex items-center gap-2 text-[0.65rem] font-semibold tracking-[3px] uppercase py-2.5 pl-7 pr-5 cursor-pointer font-mono rounded-full"
             onClick={() => setPopupOpen((p) => !p)}
           >
@@ -228,6 +235,12 @@ export default function Navbar() {
               onClick={() => { setMobileOpen(false); navigate('/organising-committee'); window.scrollTo(0,0); }}
             >
               Organisers
+            </button>
+            <button
+              className="text-[0.7rem] font-semibold tracking-[2px] uppercase py-3 px-6 border border-border-hover text-white cursor-pointer font-mono transition-all duration-300 hover:text-[var(--color-gold)] hover:border-[var(--color-gold)] rounded-full text-center block mb-2"
+              onClick={() => { setMobileOpen(false); navigate('/representatives'); window.scrollTo(0,0); }}
+            >
+              Representatives
             </button>
             <button
               className="register-btn text-[0.7rem] font-semibold tracking-[3px] uppercase py-3 px-6 cursor-pointer font-mono rounded-full text-center"
