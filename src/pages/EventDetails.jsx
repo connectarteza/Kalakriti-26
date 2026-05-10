@@ -2,6 +2,20 @@ import { useEffect } from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import { EVENTS } from '../data/events';
 
+const formatListItem = (text) => {
+  let cleanText = text.trim().replace(/\.$/, "");
+  const parts = cleanText.split(' : ');
+  if (parts.length > 1) {
+    return (
+      <span>
+        <span className="text-white font-semibold tracking-wide">{parts[0]} : </span>
+        <span className="text-white/80">{parts.slice(1).join(' : ')}</span>
+      </span>
+    );
+  }
+  return <span className="text-white/80">{cleanText}</span>;
+};
+
 export default function EventDetails() {
   const { eventName } = useParams();
 
@@ -19,12 +33,15 @@ export default function EventDetails() {
   }
 
   // Fallback dummy data if not provided in events.js
-  const guidelines = event.guidelines || [
+  const rawGuidelines = event.guidelines || [
     "Participants must carry their college ID cards.",
     "On-spot registration is subject to availability.",
     "The decision of the judges will be final and binding.",
     "Any form of misbehavior will lead to immediate disqualification."
   ];
+
+  const whatItIsText = rawGuidelines.find(g => g.toLowerCase().startsWith("what it is :"));
+  const guidelines = rawGuidelines.filter(g => !g.toLowerCase().startsWith("what it is :"));
 
   const rules = event.rules || [
     "Time limit: 5-7 minutes.",
@@ -50,10 +67,10 @@ export default function EventDetails() {
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10 mb-8">
         <Link 
-          to="/"
+          to="/#events"
           className="inline-flex items-center gap-2 text-[var(--color-gold)]/70 hover:text-[var(--color-gold)] transition-colors font-mono text-[10px] tracking-[3px] uppercase group"
         >
-          <i className="ri-arrow-left-line text-sm transition-transform group-hover:-translate-x-1"></i> Back to Home
+          <i className="ri-arrow-left-line text-sm transition-transform group-hover:-translate-x-1"></i> Back to Events
         </Link>
       </div>
 
@@ -119,20 +136,34 @@ export default function EventDetails() {
             <div className="h-[1px] bg-[var(--color-gold)]/40 flex-1"></div>
           </div>
 
+          {/* What It Is Section */}
+          {whatItIsText && (
+            <div className="mb-10">
+              <h3 className="font-display text-xl text-[var(--color-gold)] font-bold uppercase tracking-[2px] mb-5 flex items-center gap-3">
+                <i className="ri-information-line"></i> What It Is
+              </h3>
+              <div className="text-white/80 font-body text-[0.95rem] leading-relaxed bg-white/[0.02] py-3 px-4 border-l-[2px] border-[var(--color-gold)]/70">
+                {whatItIsText.replace(/^What It Is :\s*/i, "").trim().replace(/\.$/, "")}
+              </div>
+            </div>
+          )}
+
           {/* Guidelines Section */}
-          <div className="mb-10">
-            <h3 className="font-display text-xl text-[var(--color-gold)] font-bold uppercase tracking-[2px] mb-5 flex items-center gap-3">
-              <i className="ri-file-list-3-line"></i> Guidelines
-            </h3>
-            <ul className="space-y-3">
-              {guidelines.map((g, i) => (
-                <li key={i} className="flex items-start gap-3 text-text-muted font-body text-[0.95rem] leading-relaxed">
-                  <span className="text-[var(--color-gold)] mt-1 opacity-70">◆</span>
-                  {g}
-                </li>
-              ))}
-            </ul>
-          </div>
+          {guidelines.length > 0 && (
+            <div className="mb-10">
+              <h3 className="font-display text-xl text-[var(--color-gold)] font-bold uppercase tracking-[2px] mb-5 flex items-center gap-3">
+                <i className="ri-file-list-3-line"></i> Guidelines
+              </h3>
+              <ul className="space-y-3">
+                {guidelines.map((g, i) => (
+                  <li key={i} className="flex items-start gap-3 text-text-muted font-body text-[0.95rem] leading-relaxed">
+                    <span className="text-[var(--color-gold)] mt-1 opacity-70">◆</span>
+                    <div className="flex-1">{formatListItem(g)}</div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {/* Rules Section */}
           <div className="mb-12">
@@ -141,9 +172,9 @@ export default function EventDetails() {
             </h3>
             <ul className="space-y-3">
               {rules.map((r, i) => (
-                <li key={i} className="flex items-start gap-3 text-white/80 font-body text-[0.95rem] leading-relaxed">
+                <li key={i} className="flex items-start gap-3 font-body text-[0.95rem] leading-relaxed">
                   <span className="text-accent mt-1 opacity-80">◆</span>
-                  {r}
+                  <div className="flex-1">{formatListItem(r)}</div>
                 </li>
               ))}
             </ul>

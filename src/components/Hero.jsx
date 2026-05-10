@@ -14,6 +14,11 @@ export default function Hero() {
   const audioRef = useRef(null);
 
   useEffect(() => {
+    // Check if user explicitly muted it previously
+    if (sessionStorage.getItem('musicMutedByUser') === 'true') {
+      return;
+    }
+
     // Attempt autoplay immediately (might be blocked)
     if (audioRef.current) {
       audioRef.current.play()
@@ -46,9 +51,13 @@ export default function Hero() {
     if (isPlaying) {
       audioRef.current.pause();
       setIsPlaying(false);
+      sessionStorage.setItem('musicMutedByUser', 'true');
     } else {
       audioRef.current.play()
-        .then(() => setIsPlaying(true))
+        .then(() => {
+          setIsPlaying(true);
+          sessionStorage.removeItem('musicMutedByUser');
+        })
         .catch(e => console.log('Audio play failed:', e));
     }
   };
@@ -275,13 +284,11 @@ export default function Hero() {
         </button>
       </div>
 
-      {/* Hidden Audio Element */}
       <audio 
         ref={audioRef} 
         src="/mp3/pinkyloll-my-she-wolf-eara_-my-wolf-blood-aj-490559 (1).mp3" 
         onTimeUpdate={handleTimeUpdate}
         preload="auto"
-        autoPlay
       />
     </section>
   );

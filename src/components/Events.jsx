@@ -60,7 +60,13 @@ function EventCard({ event }) {
 }
 
 export default function Events() {
-  const [activeFilter, setActiveFilter] = useState('all');
+  const [activeFilter, setActiveFilter] = useState(() => {
+    return sessionStorage.getItem('eventsActiveFilter') || 'all';
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem('eventsActiveFilter', activeFilter);
+  }, [activeFilter]);
   const headerRef = useScrollReveal();
   const filterRef = useScrollReveal();
 
