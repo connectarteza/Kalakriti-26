@@ -8,18 +8,52 @@
     <meta name="description" content="Kalakriti'26 is the premier art festival curated by Arteza at Meghnad Saha Institute of Technology. Register now!" />
 
     <!-- Preload Hero Image for faster LCP -->
-    <link rel="preload" as="image" href="/Herobg/avatar.png" />
+    <link rel="preload" as="image" href="/Herobg/avatar.webp" fetchpriority="high" />
 
-    <!-- Google Fonts — Premium Typography -->
+    <!-- Google Fonts — Premium Typography (Optimized for FCP) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    </noscript>
 
-    <!-- Remix Icon -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Remix Icon (Optimized for FCP) -->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    </noscript>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <style>
+        .initial-preloader {
+          position: fixed; inset: 0; z-index: 9999;
+          display: flex; align-items: center; justify-content: center;
+          background-color: #050203;
+        }
+        .initial-preloader-ring {
+          width: 80px; height: 80px; margin: 0 auto 1.25rem;
+          border: 2px solid #2a1a1a; border-top-color: #9a0000;
+          border-radius: 50%;
+          animation: spin 1s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .initial-preloader-text {
+          font-family: 'Cinzel Decorative', 'Cinzel', serif;
+          font-size: 0.875rem; letter-spacing: 6px;
+          color: #9a0000; text-transform: uppercase;
+        }
+      </style>
+      <div class="initial-preloader">
+        <div style="text-align: center;">
+          <div class="initial-preloader-ring"></div>
+          <span class="initial-preloader-text">Kalakriti'26</span>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

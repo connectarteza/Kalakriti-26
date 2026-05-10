@@ -214,7 +214,7 @@ export default function Hero() {
             
             {/* Free Floating Avatar Image without card frame */}
             <img 
-              src="/Herobg/avatar.png" 
+              src="/Herobg/avatar.webp" 
               alt="Kalakriti '26" 
               className="relative z-20 w-[90%] h-auto object-contain drop-shadow-[0_0_50px_rgba(139,0,0,0.6)] filter contrast-[1.15]"
             />

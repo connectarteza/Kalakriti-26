@@ -135,7 +135,7 @@ export default function Schedule() {
             <div className="absolute inset-0 bg-gradient-to-br from-[#2a0505] to-[#0a0202] z-0"></div>
             
             <div className="absolute inset-0 flex flex-col items-center justify-center z-10 p-8">
-              <img src="/Herobg/avatar.png" alt="Kalakriti Avatar" className="w-[120px] mb-8 opacity-90 drop-shadow-[0_0_15px_rgba(201,168,76,0.3)]" />
+              <img src="/Herobg/avatar.webp" alt="Kalakriti Avatar" className="w-[120px] mb-8 opacity-90 drop-shadow-[0_0_15px_rgba(201,168,76,0.3)]" />
               <h3 className="font-display text-2xl text-[var(--color-gold)] tracking-[4px] mb-2 drop-shadow-[0_0_10px_rgba(201,168,76,0.5)]">KALAKRITI</h3>
               <p className="font-mono text-[10px] tracking-[4px] text-white/50 uppercase">
                 &apos;26 — Official Brochure
