@@ -5,6 +5,7 @@ import App from './App.jsx';
 import MobileApp from './mobile/MobileApp.jsx';
 
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function Root() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
@@ -19,6 +20,7 @@ function Root() {
     <StrictMode>
       {isMobile ? <MobileApp /> : <App />}
       <Analytics />
+      <SpeedInsights />
     </StrictMode>
   );
 }

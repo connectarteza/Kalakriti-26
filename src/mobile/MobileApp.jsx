@@ -10,10 +10,7 @@ import Representatives from '../pages/Representatives';
 import './mobile.css';
 
 export default function MobileApp() {
-  if (window.location.pathname === '/') {
-    window.location.replace('kalakriti-26/');
-    return null;
-  }
+
 
   return (
     <div className="mobile-view-wrapper">
