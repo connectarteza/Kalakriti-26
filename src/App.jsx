@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Preloader from './components/Preloader';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -26,6 +27,7 @@ export default function App() {
       </Routes>
       <Footer />
       <BackToTop />
+      <SpeedInsights />
     </BrowserRouter>
   );
 }
