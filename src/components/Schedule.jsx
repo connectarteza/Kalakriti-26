@@ -105,21 +105,20 @@ export default function Schedule() {
           </div>
 
           {/* Action Buttons */}
-          <div className="flex items-center gap-8 clip-reveal" style={{ animationDelay: '0.7s' }}>
+          <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 clip-reveal w-full" style={{ animationDelay: '0.7s' }}>
             <a 
               href="https://drive.google.com/file/d/1RIcH3TrmOw0KO87MqzKoaNptkbT3nWuJ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative overflow-hidden font-mono text-[11px] font-bold tracking-[4px] uppercase py-4 px-8 bg-transparent text-[var(--color-gold)] border border-[var(--color-gold)] transition-all duration-400 hover:bg-[var(--color-gold)] hover:text-[#0a0404] hover:shadow-[0_0_20px_rgba(201,168,76,0.3)] flex items-center gap-3 group"
+              className="relative overflow-hidden font-mono text-[11px] font-bold tracking-[4px] uppercase py-4 px-8 bg-transparent text-[var(--color-gold)] border border-[var(--color-gold)] transition-all duration-400 hover:bg-[var(--color-gold)] hover:text-[#0a0404] hover:shadow-[0_0_20px_rgba(201,168,76,0.3)] flex items-center justify-center gap-3 group w-full sm:w-auto"
             >
               <i className="ri-book-read-line text-[14px]"></i> View Official Brochure
             </a>
             
             <a 
               href="https://drive.google.com/uc?export=download&id=1RIcH3TrmOw0KO87MqzKoaNptkbT3nWuJ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-mono text-[10px] font-bold tracking-[3px] uppercase text-white/60 hover:text-[var(--color-gold)] transition-colors border-b border-white/20 hover:border-[var(--color-gold)] pb-1"
+              download="Kalakriti_Brochure.pdf"
+              className="font-mono text-[10px] font-bold tracking-[3px] uppercase text-white/60 hover:text-[var(--color-gold)] transition-colors border-b border-white/20 hover:border-[var(--color-gold)] pb-1 w-auto inline-block text-center"
             >
               Download PDF
             </a>

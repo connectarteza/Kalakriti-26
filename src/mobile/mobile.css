@@ -105,16 +105,11 @@
   gap: 1.5rem !important;
 }
 
+/* Cleaned up schedule links for mobile */
 .mobile-view-wrapper #schedule .flex.items-center.gap-8 {
   flex-direction: column !important;
-  gap: 1rem !important;
+  gap: 1.5rem !important;
   width: 100%;
-}
-
-.mobile-view-wrapper #schedule .flex.items-center.gap-8 a {
-  width: 100% !important;
-  text-align: center !important;
-  justify-content: center !important;
 }
 
 /* =========================================================================

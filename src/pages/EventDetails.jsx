@@ -103,15 +103,26 @@ export default function EventDetails() {
             )}
           </div>
           
-          {/* Main Action Button */}
-          <div className="w-[85%] sm:w-[70%] lg:w-full mt-8">
+          {/* Action Buttons */}
+          <div className="w-[85%] sm:w-[70%] lg:w-full mt-8 flex flex-col gap-4">
             <a
               href={event.link && event.link !== '#' ? event.link : "https://forms.google.com"}
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center font-display text-[0.8rem] font-bold tracking-[4px] uppercase py-5 bg-accent text-white transition-all duration-300 hover:bg-accent-hover hover:shadow-[0_0_30px_rgba(139,0,0,0.6)] btn-shimmer-sweep border border-accent relative overflow-hidden group"
+              className="block w-full text-center font-display text-[0.95rem] font-bold tracking-[5px] uppercase py-5 bg-accent text-white transition-all duration-300 hover:bg-accent-hover btn-shimmer-sweep border-[1.5px] border-[var(--color-gold)]/70 hover:border-[var(--color-gold)] relative overflow-hidden group rounded-sm animate-btn-pulse"
             >
-              <span className="relative z-10">Register Now</span>
+              <span className="relative z-10 drop-shadow-md">Register Now</span>
+            </a>
+
+            <a
+              href={event.brochure || "https://canva.link/dh2s6x0oed79k13"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center font-display text-[0.8rem] font-bold tracking-[3px] uppercase py-3.5 bg-transparent text-[var(--color-gold)] transition-all duration-300 hover:bg-[var(--color-gold)]/10 border border-[var(--color-gold)]/50 hover:border-[var(--color-gold)] relative overflow-hidden group rounded-sm"
+            >
+              <span className="relative z-10 flex items-center justify-center gap-2">
+                <i className="ri-book-read-line text-lg"></i> View in Brochure
+              </span>
             </a>
           </div>
         </div>
@@ -125,9 +136,18 @@ export default function EventDetails() {
             </span>
           </div>
 
-          <h1 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold text-white uppercase tracking-[-1px] leading-[1.1] mb-6 drop-shadow-[0_0_15px_rgba(201,168,76,0.3)]">
+          <h1 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] font-bold text-white uppercase tracking-[-1px] leading-[1.1] mb-4 drop-shadow-[0_0_15px_rgba(201,168,76,0.3)] text-center lg:text-left">
             {event.name}
           </h1>
+
+          {event.tagline && (
+            <div className="flex items-center justify-center lg:justify-start gap-4 mb-8">
+              <h2 className="font-display text-lg sm:text-xl text-[var(--color-gold)] font-bold uppercase tracking-[5px] text-center lg:text-left drop-shadow-[0_0_12px_rgba(201,168,76,0.6)]">
+                {event.tagline}
+              </h2>
+              <div className="hidden lg:block h-[1px] flex-1 max-w-[200px] bg-gradient-to-r from-[var(--color-gold)]/50 to-transparent"></div>
+            </div>
+          )}
 
           {/* Diamond Divider */}
           <div className="flex items-center mb-10">

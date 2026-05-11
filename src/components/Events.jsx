@@ -34,12 +34,17 @@ function EventCard({ event }) {
       </div>
 
       {/* Event Name */}
-      <div className="bg-bg-card py-3.5 px-4 border-x border-border flex items-center justify-center relative z-20 min-h-[72px] flex-grow">
-        <h3 className="font-display text-[0.95rem] font-[600] text-[#F0E6D3] text-center tracking-[0.06em] flex items-center justify-center gap-3 w-full">
-          <span className="h-[1px] bg-gold/30 transition-all duration-500 w-3 group-hover:w-6 group-hover:bg-gold"></span>
-          {event.name}
-          <span className="h-[1px] bg-gold/30 transition-all duration-500 w-3 group-hover:w-6 group-hover:bg-gold"></span>
+      <div className="bg-bg-card py-4 px-3 border-x border-border flex flex-col items-center justify-center relative z-20 min-h-[72px] flex-grow gap-1.5">
+        <h3 className="font-display text-[0.9rem] font-[600] text-[#F0E6D3] text-center tracking-[0.05em] flex items-center justify-center gap-2 w-full">
+          <span className="h-[1px] bg-gold/30 transition-all duration-500 w-2 sm:w-3 group-hover:w-5 group-hover:bg-gold shrink-0"></span>
+          <span className="leading-tight" style={{ textWrap: 'balance' }}>{event.name}</span>
+          <span className="h-[1px] bg-gold/30 transition-all duration-500 w-2 sm:w-3 group-hover:w-5 group-hover:bg-gold shrink-0"></span>
         </h3>
+        {event.tagline && (
+          <span className="block font-mono text-[0.55rem] sm:text-[0.65rem] text-[var(--color-gold)] font-medium uppercase tracking-widest text-center w-full px-1 leading-[1.4]" style={{ textWrap: 'balance' }}>
+            {event.tagline}
+          </span>
+        )}
       </div>
 
       {/* Explore Button */}

@@ -17,7 +17,9 @@ export const EVENTS = [
     category: 'videography', 
     poster: '/Posters/KALPACHITRA.png', 
     link: 'https://docs.google.com/forms/d/1N9YNwKCe2u72cc6caD5g65URfJ3T1my7qYnlOPz3DY8/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#17',
     badge: 'Online / Offline Scr.',
+    tagline: 'Short-Film Competition',
     guidelines: [
       "Duration shouldn't be less than 5 mins and exceed 10 minutes [including credits].",
       "Subtitles MUST be included in English.",
@@ -47,7 +49,9 @@ export const EVENTS = [
     category: 'videography', 
     poster: '/Posters/CINE-CHARCHA.png', 
     link: 'https://docs.google.com/forms/d/1BXGDqECg3dcB3fk3AR3LITswxffIGl_b1NmwYhvIfBA/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#18',
     badge: 'Offline',
+    tagline: 'Movie & Anime Quiz',
     guidelines: [
       "The quiz will consist of three rounds : MCQ Round, Visual & Audio Round, Rapid Fire Round.",
       "Use of Mobile Phones, Smartwatches, Earphones or any Electronic Devices are strictly prohibited. Any team found using any electronic devices or trying to search answers will be immediately disqualified.",
@@ -70,7 +74,9 @@ export const EVENTS = [
     category: 'videography', 
     poster: '/Posters/ABHIVYAKTI.png', 
     link: 'https://docs.google.com/forms/d/1wuUzj-6sqiT4jEFZ6prGP03z0EzK7W6ijRvwgxCwqLo/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#19',
     badge: 'Online',
+    tagline: 'Vertical Short-Film Competition',
     guidelines: [
       "Subtitles ARE preferred and have to be in English, they are not mandatory though.",
       "Content MUST be Original, Plagiarism will lead to immediate disqualification.",
@@ -99,7 +105,9 @@ export const EVENTS = [
     category: 'photography', 
     poster: '/Posters/SHUTTER HUNT.png', 
     link: 'https://docs.google.com/forms/d/1X2qkPng1cw4WHyOwc-jTq5bHCNlq8K-2s8C92s8XdY0/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#22',
     badge: 'Offline',
+    tagline: 'Photography Scavenger Hunt',
     guidelines: [
       "What It Is : You have to capture photographs based on given themes within a limited time, of about 25-40 mins.",
       "The participants must submit only original photos, no reused or edited photos [basic light and exposure edit allowed].",
@@ -124,7 +132,9 @@ export const EVENTS = [
     category: 'photography', 
     poster: '/Posters/LENS GALLERY.png', 
     link: 'https://docs.google.com/forms/d/1Y3EGKck6kPMVg0PsqaUgBqS5_6Cpv63zFKPuzPAwzLE/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#23',
     badge: 'Online / Offline Exhib.',
+    tagline: 'Photography Exhibition',
     guidelines: [
       "What It Is : You have to showcase your best photographs in a creative exhibition.",
       "Participants must complete a pre-event submission; only selected entries will be displayed.",
@@ -150,7 +160,9 @@ export const EVENTS = [
     category: 'photography', 
     poster: '/Posters/TRILOGY.png', 
     link: 'https://docs.google.com/forms/d/1EFHHu7-GkPUsqYQEgmnmUMdok0yqo_qTBLJErZEZFqM/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#20',
     badge: 'Online / Offline Scr.',
+    tagline: 'Photography Storytelling',
     guidelines: [
       "What It Is : You have to capture and present a sequence of photos that tells a compelling story.",
       "Participants must submit exactly three original photos arranged in a sequence that tells a story.",
@@ -173,7 +185,9 @@ export const EVENTS = [
     category: 'photography', 
     poster: '/Posters/REFRAME.png', 
     link: 'https://docs.google.com/forms/d/1TGto5xqd4Xqip0pwiOc5r1ATfZh1aiDDU2Reuy5IRnU/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#21',
     badge: 'Online / Offline Scr.',
+    tagline: 'Photo Editing Competition',
     guidelines: [
       "What It Is : You have to transform a raw image into a striking final piece.",
       "Raw images will be shared with participants via Google Drive, and only the provided images must be used for editing.",
@@ -201,7 +215,9 @@ export const EVENTS = [
     category: 'visual', 
     poster: '/Posters/EASEL.png', 
     link: '#', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#9',
     badge: 'Offline',
+    tagline: 'On-Spot Painting / Sketching Competition',
     guidelines: [
       "What It Is : Participants sit and paint or sketch according to the theme.",
       "Participants will be provided paper.",
@@ -225,7 +241,9 @@ export const EVENTS = [
     category: 'visual', 
     poster: '/Posters/MASQUERADE.png', 
     link: '#', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#13',
     badge: 'Offline',
+    tagline: 'Face Painting Competition',
     guidelines: [
       "What It Is : The painter paints their artwork on the model's face.",
       "This is a team competition, with 1 model and 1 painter.",
@@ -248,7 +266,9 @@ export const EVENTS = [
     category: 'visual', 
     poster: '/Posters/LIGHTS CAMERA RECREATE.png', 
     link: '#', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#11',
     badge: 'Online',
+    tagline: 'Bollywood Poster Remaking Competition',
     guidelines: [
       "What It Is : Participants will be provided a Bollywood Movie at random and must recreate the poster of that movie, keeping in place the vibe of it.",
       "Participants may use any designing/editing software to make the poster, like Canva, Photoshop, etc.",
@@ -269,7 +289,9 @@ export const EVENTS = [
     category: 'visual', 
     poster: '/Posters/LAUGH LINES.png', 
     link: '#', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#12',
     badge: 'Offline',
+    tagline: 'Caricature Making Competition',
     guidelines: [
       "What It Is : Participants will be provided a papercup on which they must draw a caricature of the model.",
       "Pencils and erasers will be provided, anything other than that must be brought by the participants."
@@ -289,7 +311,9 @@ export const EVENTS = [
     category: 'visual', 
     poster: '/Posters/CRAFTOPIA.png', 
     link: '#', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#10',
     badge: 'Online / Offline Exhib.',
+    tagline: 'Craft Making Competition',
     guidelines: [
       "What It Is : Participants make and upload pictures of their craft and also a video of 15 secs of them preparing it.",
       "Craft Guidelines: Participants are free to use any craft technique or medium [paper craft, recycled materials, DIY models, etc.].",
@@ -315,7 +339,9 @@ export const EVENTS = [
     category: 'writing', 
     poster: '/Posters/IMPROMPTU.png', 
     link: 'https://docs.google.com/forms/d/1_AsxksblvOnH1gwIqZ0Cbu-ULj-t5zhAPmsJstWT0YA/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#4',
     badge: 'Offline',
+    tagline: 'Creative Writing Competition',
     guidelines: [
       "What It Is : Participants will be given a topic to write on.",
       "Participants are free to explore any writing style or format on the given topic [poetry or prose], as long as it is not plagiarised.",
@@ -339,7 +365,9 @@ export const EVENTS = [
     category: 'writing', 
     poster: '/Posters/CLASHPOINT.png', 
     link: 'https://docs.google.com/forms/d/1aw6vvPSf21xh9fVMFuvaobUBZhrhxMh-FaZ-eGo7Mtw/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#5',
     badge: 'Offline',
+    tagline: 'Debate Competition',
     guidelines: [
       "What It Is : Two teams argue for and against a motion. You speak, rebut, and try to out-argue the other side.",
       "Arguments must remain respectful and should not directly or indirectly target or offend any individual, community, or culture.",
@@ -364,7 +392,9 @@ export const EVENTS = [
     category: 'writing', 
     poster: '/Posters/ORATORIA.png', 
     link: 'https://docs.google.com/forms/d/14-GeGI92IsUjdVijZfZbyVLF24yNWHaMTcyCra_bwUg/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#6',
     badge: 'Offline',
+    tagline: 'Recitation Competition',
     guidelines: [
       "What It Is : You step up and perform a poem or piece.",
       "Participants may choose existing works or present self-composed pieces; proper credit must be given where applicable.",
@@ -387,7 +417,9 @@ export const EVENTS = [
     category: 'writing', 
     poster: '/Posters/EXTEMPO.png', 
     link: 'https://docs.google.com/forms/d/1CbDf7balJ9oy-ICEUPcLl69H4LToo80Mrcl-hWpAiNs/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#7',
     badge: 'Offline',
+    tagline: 'Extempore Competition',
     guidelines: [
       "What It Is : You get a topic on the spot. A few seconds to think, then you speak. No prep, no notes.",
       "Participants will deliver a spontaneous speech on a given topic without prior preparation."
@@ -410,7 +442,9 @@ export const EVENTS = [
     category: 'writing', 
     poster: '/Posters/SONANCE.png', 
     link: 'https://docs.google.com/forms/d/1aFrphyBHO7WZ-Hh8dKFF-Jcfl1tei4I2F5BNfJtgmIw/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#8',
     badge: 'Offline',
+    tagline: 'Audio Drama Competition',
     guidelines: [
       "What It Is : You perform a live audio drama using voices and sound effects.",
       "Participants may perform original scripts or adaptations; proper credit must be given for any adapted content.",
@@ -436,7 +470,9 @@ export const EVENTS = [
     category: 'performing', 
     poster: '/Posters/ACT IT OUT.png', 
     link: 'https://docs.google.com/forms/d/1-xjdt6f08e9vXh3785clzb1JbfEWn8rHhDKF3Bfmv74/viewform?ts=69f0b887', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#16',
     badge: 'Offline',
+    tagline: 'Impromptu Acting & Mimicry Competition',
     guidelines: [
       "Judges and organising committee decisions are final.",
       "Even number of participants advances to the next round.",
@@ -461,7 +497,9 @@ export const EVENTS = [
     category: 'performing', 
     poster: '/Posters/I LAUGH YOU.png', 
     link: 'https://docs.google.com/forms/d/1tlK2bQUL251PGbdW7snEGe0IiFbZvZy3axkcR5t_cmA/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#14',
     badge: 'Offline',
+    tagline: 'Stand-up Comedy Competition',
     guidelines: [
       "It is strictly a comedy event.",
       "Any form of vulgar words or inappropriate gestures will lead to disqualification."
@@ -484,7 +522,9 @@ export const EVENTS = [
     category: 'performing', 
     poster: '/Posters/N 2 SMOKE.png', 
     link: 'https://docs.google.com/forms/d/1cfLt5VtvaurV3d7zPORJuG7LS47ZkJ7QqkcL-KGft4M/viewform', 
+    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#15',
     badge: 'Offline',
+    tagline: 'Question Battle Competition',
     guidelines: [
       "What It Is : A Face Off Question Battle, where you only have to ask questions related to the topic provided and SMOKE others taking continuous turns until you've beaten N others.",
       "Each round is a 1v1 Face Off. Participants come and one random topic is picked up. They have to keep on saying sentences-Related to the Topic and HAS to end with a question.",

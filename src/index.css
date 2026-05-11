@@ -579,3 +579,18 @@ ul {
     left: 200%;
   }
 }
+
+@keyframes btn-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 25px rgba(139,0,0,0.8);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 40px rgba(139,0,0,1), 0 0 15px rgba(201,168,76,0.5);
+  }
+}
+
+.animate-btn-pulse {
+  animation: btn-pulse 2.5s ease-in-out infinite;
+}
