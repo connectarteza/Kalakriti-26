@@ -6,7 +6,7 @@ import BackToTop from '../components/BackToTop';
 import Home from '../pages/Home';
 import EventDetails from '../pages/EventDetails';
 import OrganisingCommittee from '../pages/OrganisingCommittee';
-import Representatives from '../pages/Representatives';
+// import Representatives from '../pages/Representatives';
 import './mobile.css';
 
 export default function MobileApp() {
@@ -21,7 +21,7 @@ export default function MobileApp() {
           <Route path="/" element={<Home />} />
           <Route path="events/:eventName/" element={<EventDetails />} />
           <Route path="organising-committee/" element={<OrganisingCommittee />} />
-          <Route path="representatives/" element={<Representatives />} />
+          {/* <Route path="representatives/" element={<Representatives />} /> */}
         </Routes>
         <Footer />
         <BackToTop />

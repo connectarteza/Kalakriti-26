@@ -102,12 +102,12 @@ export default function Navbar() {
             Organisers
           </button>
 
-          <button
+          {/* <button
             className="nav-link text-[11px] font-bold uppercase bg-transparent border-none cursor-pointer font-body text-white hover:text-[var(--color-gold)] transition-colors"
             onClick={() => { navigate('/representatives'); window.scrollTo(0,0); }}
           >
             Representatives
-          </button>
+          </button> */}
 
           <button
             className="register-btn flex items-center gap-2 text-[0.65rem] font-semibold tracking-[3px] uppercase py-2.5 pl-7 pr-5 cursor-pointer font-mono rounded-full"
@@ -169,29 +169,25 @@ export default function Navbar() {
               <div className="h-px bg-border/50 mx-6"></div>
 
               {/* Representative */}
-              <a
+              {/* <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdnXnSzhdwtj_7limcEhTA6AxYp-XVjqCOUgUL882DRgoF68A/viewform?usp=dialog"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative w-full text-left flex items-center gap-4 py-4 px-6 bg-transparent cursor-pointer transition-colors duration-300 overflow-hidden hover:bg-white/[0.02]"
               >
-                {/* Glow sweep */}
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_0%_50%,rgba(192,57,43,0.1)_0%,transparent_50%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                 
-                {/* Icon */}
                 <div className="w-9 h-9 shrink-0 flex items-center justify-center rounded-full border border-border bg-surface text-orange-light text-sm group-hover:border-accent/60 group-hover:text-accent transition-colors duration-300 relative z-10">
                   <i className="ri-group-line" />
                 </div>
                 
-                {/* Text */}
                 <div className="flex-1 relative z-10">
                   <div className="font-display text-[0.7rem] font-bold tracking-[1px] uppercase text-white mb-0.5">Representative</div>
                   <div className="text-[10px] text-text-muted font-body">College rep sign-up</div>
                 </div>
                 
-                {/* Animated Arrow */}
                 <i className="ri-arrow-right-line text-accent opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 relative z-10" />
-              </a>
+              </a> */}
             </div>
 
             {/* Footer Micro-text */}
@@ -245,26 +241,26 @@ export default function Navbar() {
             >
               Organisers
             </button>
-            <button
+            {/* <button
               className="text-[0.7rem] font-semibold tracking-[2px] uppercase py-3 px-6 border border-border-hover text-white cursor-pointer font-mono transition-all duration-300 hover:text-[var(--color-gold)] hover:border-[var(--color-gold)] rounded-full text-center block mb-2"
               onClick={() => { setMobileOpen(false); navigate('/representatives'); window.scrollTo(0,0); }}
             >
               Representatives
-            </button>
+            </button> */}
             <button
               className="register-btn text-[0.7rem] font-semibold tracking-[3px] uppercase py-3 px-6 cursor-pointer font-mono rounded-full text-center"
               onClick={() => { setMobileOpen(false); scrollTo('events'); }}
             >
               Participant Registration
             </button>
-            <a
+            {/* <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdnXnSzhdwtj_7limcEhTA6AxYp-XVjqCOUgUL882DRgoF68A/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[0.7rem] font-semibold tracking-[2px] uppercase py-3 px-6 border border-border-hover text-text-muted cursor-pointer font-mono transition-all duration-300 hover:text-white hover:border-accent rounded-full text-center block"
             >
               Representative Registration
-            </a>
+            </a> */}
           </div>
         </div>
       </nav>

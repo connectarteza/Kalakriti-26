@@ -240,7 +240,7 @@ export const EVENTS = [
     name: 'Masquerade', 
     category: 'visual', 
     poster: '/Posters/MASQUERADE.png', 
-    link: '#', 
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSeS68CYaSq94K67ZcfJjsYTzTd8HzFL9eUlS3wi0A692X3oVA/viewform?usp=header', 
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#13',
     badge: 'Offline',
     tagline: 'Face Painting Competition',
