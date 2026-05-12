@@ -11,12 +11,12 @@ export const CATEGORIES = [
 
 export const EVENTS = [
   // — Videography —
-  { 
-    id: 1, 
-    name: 'Kalpachitra', 
-    category: 'videography', 
-    poster: '/Posters/KALPACHITRA.png', 
-    link: 'https://docs.google.com/forms/d/1N9YNwKCe2u72cc6caD5g65URfJ3T1my7qYnlOPz3DY8/viewform', 
+  {
+    id: 1,
+    name: 'Kalpachitra',
+    category: 'videography',
+    poster: '/Posters/KALPACHITRA.png',
+    link: 'https://docs.google.com/forms/d/1N9YNwKCe2u72cc6caD5g65URfJ3T1my7qYnlOPz3DY8/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#17',
     badge: 'Online / Offline Scr.',
     tagline: 'Short-Film Competition',
@@ -43,12 +43,12 @@ export const EVENTS = [
       { name: "Rajanya Sengupta", phone: "7439486798" }
     ]
   },
-  { 
-    id: 2, 
-    name: 'Cine-Charcha', 
-    category: 'videography', 
-    poster: '/Posters/CINE-CHARCHA.png', 
-    link: 'https://docs.google.com/forms/d/1BXGDqECg3dcB3fk3AR3LITswxffIGl_b1NmwYhvIfBA/viewform', 
+  {
+    id: 2,
+    name: 'Cine-Charcha',
+    category: 'videography',
+    poster: '/Posters/CINE-CHARCHA.png',
+    link: 'https://docs.google.com/forms/d/1BXGDqECg3dcB3fk3AR3LITswxffIGl_b1NmwYhvIfBA/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#18',
     badge: 'Offline',
     tagline: 'Movie & Anime Quiz',
@@ -68,12 +68,12 @@ export const EVENTS = [
       { name: "Md. Nehal Sahin Mollah", phone: "9735260204" }
     ]
   },
-  { 
-    id: 3, 
-    name: 'Abhivyakti', 
-    category: 'videography', 
-    poster: '/Posters/ABHIVYAKTI.png', 
-    link: 'https://docs.google.com/forms/d/1wuUzj-6sqiT4jEFZ6prGP03z0EzK7W6ijRvwgxCwqLo/viewform', 
+  {
+    id: 3,
+    name: 'Abhivyakti',
+    category: 'videography',
+    poster: '/Posters/ABHIVYAKTI.png',
+    link: 'https://docs.google.com/forms/d/1wuUzj-6sqiT4jEFZ6prGP03z0EzK7W6ijRvwgxCwqLo/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#19',
     badge: 'Online',
     tagline: 'Vertical Short-Film Competition',
@@ -99,12 +99,12 @@ export const EVENTS = [
   },
 
   // — Photography —
-  { 
-    id: 4, 
-    name: 'Shutter Hunt', 
-    category: 'photography', 
-    poster: '/Posters/SHUTTER HUNT.png', 
-    link: 'https://docs.google.com/forms/d/1X2qkPng1cw4WHyOwc-jTq5bHCNlq8K-2s8C92s8XdY0/viewform', 
+  {
+    id: 4,
+    name: 'Shutter Hunt',
+    category: 'photography',
+    poster: '/Posters/SHUTTER HUNT.png',
+    link: 'https://docs.google.com/forms/d/1X2qkPng1cw4WHyOwc-jTq5bHCNlq8K-2s8C92s8XdY0/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#22',
     badge: 'Offline',
     tagline: 'Photography Scavenger Hunt',
@@ -126,12 +126,12 @@ export const EVENTS = [
       { name: "Supratik Saha", phone: "7044752795" }
     ]
   },
-  { 
-    id: 6, 
-    name: 'Lens Gallery', 
-    category: 'photography', 
-    poster: '/Posters/LENS GALLERY.png', 
-    link: 'https://docs.google.com/forms/d/1Y3EGKck6kPMVg0PsqaUgBqS5_6Cpv63zFKPuzPAwzLE/viewform', 
+  {
+    id: 6,
+    name: 'Lens Gallery',
+    category: 'photography',
+    poster: '/Posters/LENS GALLERY.png',
+    link: 'https://docs.google.com/forms/d/1Y3EGKck6kPMVg0PsqaUgBqS5_6Cpv63zFKPuzPAwzLE/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#23',
     badge: 'Online / Offline Exhib.',
     tagline: 'Photography Exhibition',
@@ -154,12 +154,12 @@ export const EVENTS = [
       { name: "Atanu Mondal", phone: "9836980726" }
     ]
   },
-  { 
-    id: 7, 
-    name: 'Trilogy', 
-    category: 'photography', 
-    poster: '/Posters/TRILOGY.png', 
-    link: 'https://docs.google.com/forms/d/1EFHHu7-GkPUsqYQEgmnmUMdok0yqo_qTBLJErZEZFqM/viewform', 
+  {
+    id: 7,
+    name: 'Trilogy',
+    category: 'photography',
+    poster: '/Posters/TRILOGY.png',
+    link: 'https://docs.google.com/forms/d/1EFHHu7-GkPUsqYQEgmnmUMdok0yqo_qTBLJErZEZFqM/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#20',
     badge: 'Online / Offline Scr.',
     tagline: 'Photography Storytelling',
@@ -179,12 +179,12 @@ export const EVENTS = [
       { name: "Indranil Panda", phone: "7864877002" }
     ]
   },
-  { 
-    id: 8, 
-    name: 'ReFrame', 
-    category: 'photography', 
-    poster: '/Posters/REFRAME.png', 
-    link: 'https://docs.google.com/forms/d/1TGto5xqd4Xqip0pwiOc5r1ATfZh1aiDDU2Reuy5IRnU/viewform', 
+  {
+    id: 8,
+    name: 'ReFrame',
+    category: 'photography',
+    poster: '/Posters/REFRAME.png',
+    link: 'https://docs.google.com/forms/d/1TGto5xqd4Xqip0pwiOc5r1ATfZh1aiDDU2Reuy5IRnU/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#21',
     badge: 'Online / Offline Scr.',
     tagline: 'Photo Editing Competition',
@@ -209,12 +209,12 @@ export const EVENTS = [
   },
 
   // — Visual Arts —
-  { 
-    id: 9, 
-    name: 'Easel', 
-    category: 'visual', 
-    poster: '/Posters/EASEL.png', 
-    link: '#', 
+  {
+    id: 9,
+    name: 'Easel',
+    category: 'visual',
+    poster: '/Posters/EASEL.png',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSeB2bWmjzIIQj_4b33TLBw_qAu_3Xmeu4q78DjaGM8FovWOWQ/viewform?usp=header',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#9',
     badge: 'Offline',
     tagline: 'On-Spot Painting / Sketching Competition',
@@ -235,12 +235,12 @@ export const EVENTS = [
       { name: "Shreosi Kundu", phone: "9064485811" }
     ]
   },
-  { 
-    id: 10, 
-    name: 'Masquerade', 
-    category: 'visual', 
-    poster: '/Posters/MASQUERADE.png', 
-    link: 'https://docs.google.com/forms/d/e/1FAIpQLSeS68CYaSq94K67ZcfJjsYTzTd8HzFL9eUlS3wi0A692X3oVA/viewform?usp=header', 
+  {
+    id: 10,
+    name: 'Masquerade',
+    category: 'visual',
+    poster: '/Posters/MASQUERADE.png',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSeS68CYaSq94K67ZcfJjsYTzTd8HzFL9eUlS3wi0A692X3oVA/viewform?usp=header',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#13',
     badge: 'Offline',
     tagline: 'Face Painting Competition',
@@ -260,12 +260,12 @@ export const EVENTS = [
       { name: "Swapnendu Mandal", phone: "8250444543" }
     ]
   },
-  { 
-    id: 11, 
-    name: 'Lights, Camera, Recreate!', 
-    category: 'visual', 
-    poster: '/Posters/LIGHTS CAMERA RECREATE.png', 
-    link: '#', 
+  {
+    id: 11,
+    name: 'Lights, Camera, Recreate!',
+    category: 'visual',
+    poster: '/Posters/LIGHTS CAMERA RECREATE.png',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSe48kIi1RNH-v70WdOPGxxeJ7vsmZ1Dn1JUqMAT-3o75A69Yw/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#11',
     badge: 'Online',
     tagline: 'Bollywood Poster Remaking Competition',
@@ -283,12 +283,12 @@ export const EVENTS = [
       { name: "Archisman Mallick", phone: "9836817876" }
     ]
   },
-  { 
-    id: 12, 
-    name: 'Laugh Lines', 
-    category: 'visual', 
-    poster: '/Posters/LAUGH LINES.png', 
-    link: '#', 
+  {
+    id: 12,
+    name: 'Laugh Lines',
+    category: 'visual',
+    poster: '/Posters/LAUGH LINES.png',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLScLpJkaIBAoN9OWicRm48-mBhlHiUQJVKXgsdTxaYYp1RjUXQ/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#12',
     badge: 'Offline',
     tagline: 'Caricature Making Competition',
@@ -305,12 +305,12 @@ export const EVENTS = [
       { name: "Monalisa Roy", phone: "9831258993" }
     ]
   },
-  { 
-    id: 13, 
-    name: 'Craftopia', 
-    category: 'visual', 
-    poster: '/Posters/CRAFTOPIA.png', 
-    link: '#', 
+  {
+    id: 13,
+    name: 'Craftopia',
+    category: 'visual',
+    poster: '/Posters/CRAFTOPIA.png',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSfni0xhE_-oucPqoyPMcr_EoQQq59eeBKPKZwhkxlW56wGJPg/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#10',
     badge: 'Online / Offline Exhib.',
     tagline: 'Craft Making Competition',
@@ -333,12 +333,12 @@ export const EVENTS = [
   },
 
   // — Literary (Writing) —
-  { 
-    id: 14, 
-    name: 'Impromptu', 
-    category: 'writing', 
-    poster: '/Posters/IMPROMPTU.png', 
-    link: 'https://docs.google.com/forms/d/1_AsxksblvOnH1gwIqZ0Cbu-ULj-t5zhAPmsJstWT0YA/viewform', 
+  {
+    id: 14,
+    name: 'Impromptu',
+    category: 'writing',
+    poster: '/Posters/IMPROMPTU.png',
+    link: 'https://docs.google.com/forms/d/1_AsxksblvOnH1gwIqZ0Cbu-ULj-t5zhAPmsJstWT0YA/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#4',
     badge: 'Offline',
     tagline: 'Creative Writing Competition',
@@ -359,12 +359,12 @@ export const EVENTS = [
       { name: "Sayan Das", phone: "9836340011" }
     ]
   },
-  { 
-    id: 15, 
-    name: 'Clashpoint', 
-    category: 'writing', 
-    poster: '/Posters/CLASHPOINT.png', 
-    link: 'https://docs.google.com/forms/d/1aw6vvPSf21xh9fVMFuvaobUBZhrhxMh-FaZ-eGo7Mtw/viewform', 
+  {
+    id: 15,
+    name: 'Clashpoint',
+    category: 'writing',
+    poster: '/Posters/CLASHPOINT.png',
+    link: 'https://docs.google.com/forms/d/1aw6vvPSf21xh9fVMFuvaobUBZhrhxMh-FaZ-eGo7Mtw/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#5',
     badge: 'Offline',
     tagline: 'Debate Competition',
@@ -386,12 +386,12 @@ export const EVENTS = [
       { name: "Lopamudra Behuria", phone: "7980808935" }
     ]
   },
-  { 
-    id: 16, 
-    name: 'Oratoria', 
-    category: 'writing', 
-    poster: '/Posters/ORATORIA.png', 
-    link: 'https://docs.google.com/forms/d/14-GeGI92IsUjdVijZfZbyVLF24yNWHaMTcyCra_bwUg/viewform', 
+  {
+    id: 16,
+    name: 'Oratoria',
+    category: 'writing',
+    poster: '/Posters/ORATORIA.png',
+    link: 'https://docs.google.com/forms/d/14-GeGI92IsUjdVijZfZbyVLF24yNWHaMTcyCra_bwUg/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#6',
     badge: 'Offline',
     tagline: 'Recitation Competition',
@@ -411,12 +411,12 @@ export const EVENTS = [
       { name: "Somtirtho Banerjee", phone: "7439718671" }
     ]
   },
-  { 
-    id: 17, 
-    name: 'Extempo', 
-    category: 'writing', 
-    poster: '/Posters/EXTEMPO.png', 
-    link: 'https://docs.google.com/forms/d/1CbDf7balJ9oy-ICEUPcLl69H4LToo80Mrcl-hWpAiNs/viewform', 
+  {
+    id: 17,
+    name: 'Extempo',
+    category: 'writing',
+    poster: '/Posters/EXTEMPO.png',
+    link: 'https://docs.google.com/forms/d/1CbDf7balJ9oy-ICEUPcLl69H4LToo80Mrcl-hWpAiNs/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#7',
     badge: 'Offline',
     tagline: 'Extempore Competition',
@@ -436,12 +436,12 @@ export const EVENTS = [
       { name: "Anwesha Hazra", phone: "7439186088" }
     ]
   },
-  { 
-    id: 18, 
-    name: 'Sonance', 
-    category: 'writing', 
-    poster: '/Posters/SONANCE.png', 
-    link: 'https://docs.google.com/forms/d/1aFrphyBHO7WZ-Hh8dKFF-Jcfl1tei4I2F5BNfJtgmIw/viewform', 
+  {
+    id: 18,
+    name: 'Sonance',
+    category: 'writing',
+    poster: '/Posters/SONANCE.png',
+    link: 'https://docs.google.com/forms/d/1aFrphyBHO7WZ-Hh8dKFF-Jcfl1tei4I2F5BNfJtgmIw/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#8',
     badge: 'Offline',
     tagline: 'Audio Drama Competition',
@@ -464,12 +464,12 @@ export const EVENTS = [
   },
 
   // — Performing Arts —
-  { 
-    id: 19, 
-    name: 'Act it Out', 
-    category: 'performing', 
-    poster: '/Posters/ACT IT OUT.png', 
-    link: 'https://docs.google.com/forms/d/1-xjdt6f08e9vXh3785clzb1JbfEWn8rHhDKF3Bfmv74/viewform?ts=69f0b887', 
+  {
+    id: 19,
+    name: 'Act it Out',
+    category: 'performing',
+    poster: '/Posters/ACT IT OUT.png',
+    link: 'https://docs.google.com/forms/d/1-xjdt6f08e9vXh3785clzb1JbfEWn8rHhDKF3Bfmv74/viewform?ts=69f0b887',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#16',
     badge: 'Offline',
     tagline: 'Impromptu Acting & Mimicry Competition',
@@ -491,12 +491,12 @@ export const EVENTS = [
       { name: "Sulochana", phone: "8100214686" }
     ]
   },
-  { 
-    id: 20, 
-    name: 'I Laugh You', 
-    category: 'performing', 
-    poster: '/Posters/I LAUGH YOU.png', 
-    link: 'https://docs.google.com/forms/d/1tlK2bQUL251PGbdW7snEGe0IiFbZvZy3axkcR5t_cmA/viewform', 
+  {
+    id: 20,
+    name: 'I Laugh You',
+    category: 'performing',
+    poster: '/Posters/I LAUGH YOU.png',
+    link: 'https://docs.google.com/forms/d/1tlK2bQUL251PGbdW7snEGe0IiFbZvZy3axkcR5t_cmA/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#14',
     badge: 'Offline',
     tagline: 'Stand-up Comedy Competition',
@@ -516,12 +516,12 @@ export const EVENTS = [
       { name: "Debayan Das", phone: "6290577123" }
     ]
   },
-  { 
-    id: 21, 
-    name: 'N 2 SMOKE', 
-    category: 'performing', 
-    poster: '/Posters/N 2 SMOKE.png', 
-    link: 'https://docs.google.com/forms/d/1cfLt5VtvaurV3d7zPORJuG7LS47ZkJ7QqkcL-KGft4M/viewform', 
+  {
+    id: 21,
+    name: 'N 2 SMOKE',
+    category: 'performing',
+    poster: '/Posters/N 2 SMOKE.png',
+    link: 'https://docs.google.com/forms/d/1cfLt5VtvaurV3d7zPORJuG7LS47ZkJ7QqkcL-KGft4M/viewform',
     brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#15',
     badge: 'Offline',
     tagline: 'Question Battle Competition',
