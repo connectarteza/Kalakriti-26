@@ -169,7 +169,7 @@ export default function Navbar() {
               <div className="h-px bg-border/50 mx-6"></div>
 
               {/* Representative */}
-              {/* <a
+              <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdnXnSzhdwtj_7limcEhTA6AxYp-XVjqCOUgUL882DRgoF68A/viewform?usp=dialog"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -187,7 +187,7 @@ export default function Navbar() {
                 </div>
                 
                 <i className="ri-arrow-right-line text-accent opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 relative z-10" />
-              </a> */}
+              </a>
             </div>
 
             {/* Footer Micro-text */}
@@ -253,14 +253,14 @@ export default function Navbar() {
             >
               Participant Registration
             </button>
-            {/* <a
+            <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSdnXnSzhdwtj_7limcEhTA6AxYp-XVjqCOUgUL882DRgoF68A/viewform?usp=dialog"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[0.7rem] font-semibold tracking-[2px] uppercase py-3 px-6 border border-border-hover text-text-muted cursor-pointer font-mono transition-all duration-300 hover:text-white hover:border-accent rounded-full text-center block"
             >
               Representative Registration
-            </a> */}
+            </a>
           </div>
         </div>
       </nav>
