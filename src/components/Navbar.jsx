@@ -102,12 +102,12 @@ export default function Navbar() {
             Organisers
           </button>
 
-          {/* <button
+          <button
             className="nav-link text-[11px] font-bold uppercase bg-transparent border-none cursor-pointer font-body text-white hover:text-[var(--color-gold)] transition-colors"
             onClick={() => { navigate('/representatives'); window.scrollTo(0,0); }}
           >
             Representatives
-          </button> */}
+          </button>
 
           <button
             className="register-btn flex items-center gap-2 text-[0.65rem] font-semibold tracking-[3px] uppercase py-2.5 pl-7 pr-5 cursor-pointer font-mono rounded-full"
@@ -199,7 +199,9 @@ export default function Navbar() {
 
         {/* Mobile Hamburger */}
         <button
-          className="md:hidden flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1 justify-self-end"
+          className={`md:hidden flex flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1 justify-self-end relative transition-all duration-300 ${
+            mobileOpen ? 'z-[1002]' : 'z-10'
+          }`}
           onClick={() => setMobileOpen((prev) => !prev)}
           aria-label="Toggle navigation"
         >
@@ -208,9 +210,17 @@ export default function Navbar() {
           <span className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${mobileOpen ? '-rotate-45 translate-x-[5px] -translate-y-[5px]' : ''}`}></span>
         </button>
 
+        {/* Mobile Backdrop */}
+        {mobileOpen && (
+          <div 
+            className="fixed inset-0 bg-black/70 backdrop-blur-[3px] z-[1000] md:hidden cursor-pointer"
+            onClick={() => setMobileOpen(false)}
+          />
+        )}
+
         {/* Mobile Menu */}
         <div
-          className={`fixed top-0 right-0 w-[280px] h-screen bg-bg-card border-l border-border z-[1001] flex flex-col pt-20 px-8 gap-6 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] md:hidden ${
+          className={`fixed top-0 right-0 w-[280px] h-screen bg-bg-card border-l border-border z-[1001] flex flex-col pt-24 px-8 gap-6 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] md:hidden ${
             mobileOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
@@ -241,12 +251,12 @@ export default function Navbar() {
             >
               Organisers
             </button>
-            {/* <button
+            <button
               className="text-[0.7rem] font-semibold tracking-[2px] uppercase py-3 px-6 border border-border-hover text-white cursor-pointer font-mono transition-all duration-300 hover:text-[var(--color-gold)] hover:border-[var(--color-gold)] rounded-full text-center block mb-2"
               onClick={() => { setMobileOpen(false); navigate('/representatives'); window.scrollTo(0,0); }}
             >
               Representatives
-            </button> */}
+            </button>
             <button
               className="register-btn text-[0.7rem] font-semibold tracking-[3px] uppercase py-3 px-6 cursor-pointer font-mono rounded-full text-center"
               onClick={() => { setMobileOpen(false); scrollTo('events'); }}
