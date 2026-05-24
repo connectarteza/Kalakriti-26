@@ -338,7 +338,7 @@ export default function Representatives() {
         </div>
 
         {/* Important Guidelines / Information */}
-        <div className="max-w-[850px] mx-auto mb-16 p-5 md:p-6 bg-[#080606]/85 border border-[rgba(201,168,76,0.2)] rounded-sm shadow-[0_12px_40px_rgba(139,0,0,0.15)] relative z-10 flex flex-col md:flex-row gap-6 md:gap-8 justify-between text-left stagger-reveal">
+        <div className="max-w-[1100px] mx-auto mb-16 p-6 md:p-8 bg-[#080606]/85 border border-[rgba(201,168,76,0.2)] rounded-sm shadow-[0_12px_40px_rgba(139,0,0,0.15)] relative z-10 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 text-left stagger-reveal">
           {/* Decorative Corner Ornaments */}
           <div className="absolute inset-1.5 pointer-events-none opacity-30 z-30">
             <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-[var(--color-gold)]"></span>
@@ -347,8 +347,9 @@ export default function Representatives() {
             <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-[var(--color-gold)]"></span>
           </div>
 
-          <div className="flex-1 flex gap-4 items-start">
-            <div className="w-9 h-9 rounded-full bg-[rgba(201,168,76,0.06)] border border-[rgba(201,168,76,0.2)] flex items-center justify-center shrink-0 mt-0.5">
+          {/* Registration Process */}
+          <div className="flex gap-4 items-start">
+            <div className="w-9 h-9 rounded-full bg-[rgba(201,168,76,0.06)] border border-[rgba(201,168,76,0.2)] flex items-center justify-center shrink-0 mt-0.5 animate-pulse">
               <i className="ri-information-line text-sm text-[var(--color-gold)]" />
             </div>
             <div>
@@ -359,9 +360,8 @@ export default function Representatives() {
             </div>
           </div>
           
-          <div className="hidden md:block w-px bg-[rgba(201,168,76,0.15)] shrink-0 self-stretch" />
-          
-          <div className="flex-1 flex gap-4 items-start">
+          {/* Management Committee */}
+          <div className="flex gap-4 items-start">
             <div className="w-9 h-9 rounded-full bg-[rgba(201,168,76,0.06)] border border-[rgba(201,168,76,0.2)] flex items-center justify-center shrink-0 mt-0.5">
               <i className="ri-user-follow-line text-sm text-[var(--color-gold)]" />
             </div>
@@ -376,6 +376,43 @@ export default function Representatives() {
               >
                 Contact Committee <i className="ri-arrow-right-line text-[10px] transition-transform group-hover/btn:translate-x-1" />
               </Link>
+            </div>
+          </div>
+
+          {/* Grid Row Divider (visible on desktop) */}
+          <div className="hidden md:block col-span-2 h-[1px] bg-[rgba(201,168,76,0.12)] my-1" />
+
+          {/* School Registration */}
+          <div className="flex gap-4 items-start">
+            <div className="w-9 h-9 rounded-full bg-[rgba(201,168,76,0.06)] border border-[rgba(201,168,76,0.2)] flex items-center justify-center shrink-0 mt-0.5">
+              <i className="ri-edit-box-line text-sm text-[var(--color-gold)]" />
+            </div>
+            <div>
+              <h4 className="font-display text-[10px] font-bold tracking-[2px] uppercase text-[var(--color-gold)] mb-1.5">School Registration</h4>
+              <p className="text-[12px] text-white/70 leading-relaxed font-body">
+                School students are requested to enter <strong className="text-[var(--color-gold)] font-mono font-bold">&ldquo;N/A&rdquo;</strong> in the Representative field while filling out the event registration form.
+              </p>
+            </div>
+          </div>
+
+          {/* Consent & Undertaking */}
+          <div className="flex gap-4 items-start">
+            <div className="w-9 h-9 rounded-full bg-[rgba(201,168,76,0.06)] border border-[rgba(201,168,76,0.2)] flex items-center justify-center shrink-0 mt-0.5">
+              <i className="ri-file-pdf-2-line text-sm text-[var(--color-gold)]" />
+            </div>
+            <div>
+              <h4 className="font-display text-[10px] font-bold tracking-[2px] uppercase text-[var(--color-gold)] mb-1.5">Consent &amp; Undertaking</h4>
+              <p className="text-[12px] text-white/70 leading-relaxed font-body mb-3">
+                All participating school students must bring a copy of the consent letter issued by their Head of the Institution (HOI) permitting them to participate and perform in the event. The document must be presented on the day of the event.
+              </p>
+              <a 
+                href="/Undertaking letter/CONSENT & UNDERTAKING LETTER.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-[9px] font-mono font-bold tracking-[2px] text-[var(--color-gold)] hover:text-white uppercase transition-all duration-300 group/btn cursor-pointer py-2 px-4 rounded-sm border border-[var(--color-gold)]/20 hover:border-[var(--color-gold)] bg-white/[0.02] hover:bg-[var(--color-gold)]/10"
+              >
+                <i className="ri-download-cloud-2-line text-xs" /> Download Consent Letter
+              </a>
             </div>
           </div>
         </div>
