@@ -25,25 +25,48 @@ function EventCard({ event }) {
           <span className="absolute bottom-0 right-0 w-3 h-3 border-b-[1.5px] border-r-[1.5px] border-gold"></span>
         </div>
 
-        {/* Badge */}
+        {/* Mode Badge (Top-Left Corner) */}
         {event.badge && (
-          <span className="absolute top-0 left-0 font-display text-[0.58rem] tracking-[0.18em] uppercase py-1.5 px-3 bg-accent text-white font-bold z-30 shadow-lg border-r border-b border-white/10">
+          <span className="absolute top-3 left-3 font-display text-[0.52rem] sm:text-[0.58rem] tracking-[0.15em] uppercase py-1 px-2.5 bg-black/75 backdrop-blur-md text-white font-bold shadow-md border border-white/10 rounded-sm flex items-center gap-1.5 z-30 select-none">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ff4040] shrink-0 animate-pulse"></span>
             {event.badge}
           </span>
         )}
 
-        {/* Fee Badge */}
+        {/* Perforated Ticket Price Tag (Top-Right Corner) */}
         {(() => {
           const feeRule = event.rules?.find(r => r.includes("Reg. Fees :"));
           if (feeRule) {
             const match = feeRule.match(/₹\s*(\d+)/);
             if (match) {
               const amount = parseInt(match[1], 10);
-              const feeText = amount === 0 ? "FREE" : `₹${amount}/-`;
+              let themeClass = "t-crimson";
+              if (amount === 0) themeClass = "t-free";
+              else if (amount >= 150) themeClass = "t-gold";
+              else if (amount < 50) themeClass = "t-forest";
+
               return (
-                <span className="absolute top-0 right-0 font-display text-[0.75rem] tracking-[0.06em] py-1.5 px-4 bg-[#e50914] text-white font-black z-30 shadow-[0_4px_15px_rgba(229,9,20,0.5)] border-l border-b border-[var(--color-gold)]/50 rounded-bl-sm">
-                  {feeText}
-                </span>
+                <div className="absolute top-2.5 right-2.5 z-30 select-none scale-[0.80] sm:scale-[0.85] origin-top-right">
+                  <div className={`ticket ${themeClass}`}>
+                    {amount === 0 ? (
+                      <>
+                        <div className="free-glow"></div>
+                        <div className="ticket-body">
+                          <span className="free-label">FREE</span>
+                        </div>
+                      </>
+                    ) : (
+                      <div className="ticket-body">
+                        <div className="flex items-start gap-0.5">
+                          <span className="t-currency mt-0.5">₹</span>
+                          <span className="t-amount">{amount}</span>
+                        </div>
+                        <div className="ticket-shimmer"></div>
+                      </div>
+                    )}
+                    <div className="ticket-notch"></div>
+                  </div>
+                </div>
               );
             }
           }

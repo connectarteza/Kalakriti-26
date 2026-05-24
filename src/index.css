@@ -623,3 +623,169 @@ ul {
 .animate-shimmer {
   animation: shimmer 1.5s infinite;
 }
+
+/* ==========================================================
+   ── EVENT CARD TICKET BADGES ──
+   ========================================================== */
+
+/* ── TICKET STUB LAYOUT ── */
+.ticket {
+  display: flex;
+  align-items: stretch;
+  border-radius: 7px;
+  position: relative;
+  cursor: default;
+  transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.55));
+  overflow: hidden;
+}
+.ticket:hover {
+  transform: translateY(-4px) scale(1.06);
+  filter: drop-shadow(0 10px 24px rgba(0,0,0,0.7));
+}
+
+.ticket-body {
+  padding: 6px 12px 6px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 66px;
+  border-radius: 7px 0 0 7px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Perforation edge */
+.ticket-body::after {
+  content: '';
+  position: absolute;
+  right: -1px; top: 0; bottom: 0;
+  width: 1px;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 3px,
+    rgba(0,0,0,0.25) 3px,
+    rgba(0,0,0,0.25) 6px
+  );
+  z-index: 5;
+}
+
+/* Notch — Upgraded to center a full, perfect black circular punched hole dot! */
+.ticket-notch {
+  width: 22px;
+  position: relative;
+  border-radius: 0 7px 7px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ticket-notch::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 0 7px 7px 0;
+}
+.ticket-notch::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #000000; /* Solid full black circular dot punched hole! */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.8), 0 1px 0 rgba(255, 255, 255, 0.1);
+  z-index: 10;
+  position: relative;
+}
+
+.t-currency {
+  font-family: 'Bebas Neue', var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0.85;
+  line-height: 1;
+}
+.t-amount {
+  font-family: 'Black Ops One', var(--font-display);
+  font-size: 22px; /* 22px high-contrast typography as specified in redesign! */
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  animation: ticketPop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes ticketPop {
+  from { transform: scale(0.5); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+
+/* ── SHIMMER SWEEP ── */
+.ticket-shimmer {
+  position: absolute;
+  top: -20%; left: -90%;
+  width: 55%; height: 140%;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    rgba(255,255,255,0.22) 50%,
+    transparent 65%
+  );
+  pointer-events: none;
+  animation: ticketShimmer 3.5s ease-in-out infinite;
+  z-index: 4;
+}
+
+@keyframes ticketShimmer {
+  0%   { left: -90%; }
+  55%, 100% { left: 140%; }
+}
+
+/* ── COLOR THEMES ── */
+
+/* GOLD — ₹150+ (exclusive premium events) */
+.t-gold .ticket-body { background: #c47d0a; color: #fff8e0; }
+.t-gold .ticket-notch::before { background: #c47d0a; }
+
+/* CRIMSON — ₹50 - ₹149 (live perform / major events) */
+.t-crimson .ticket-body { background: #b0101f; color: #ffe8e8; }
+.t-crimson .ticket-notch::before { background: #b0101f; }
+
+/* FOREST — ₹1 - ₹49 (accessible / micro events) */
+.t-forest .ticket-body { background: #115e59; color: #ccfbf1; }
+.t-forest .ticket-notch::before { background: #115e59; }
+
+/* FREE TICKET — Electric yellow borders on obsidian blue body */
+.t-free .ticket-body { background: #050203; border: 1.5px solid #f5d800; border-right: none; color: #f5d800; }
+.t-free .ticket-notch::before { background: #050203; border: 1.5px solid #f5d800; border-left: none; }
+.t-free .ticket { animation: freeFloat 2.8s ease-in-out infinite; filter: drop-shadow(0 4px 14px rgba(245,216,0,0.25)); }
+.t-free .ticket:hover { animation-play-state: paused; transform: translateY(-5px) scale(1.08); filter: drop-shadow(0 12px 28px rgba(245,216,0,0.45)); }
+
+@keyframes freeFloat {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-4px); }
+}
+
+/* FREE pulse ring */
+.free-glow {
+  position: absolute;
+  inset: -4px;
+  border-radius: 6px;
+  border: 1.5px solid #f5d800;
+  opacity: 0;
+  animation: freePulse 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes freePulse {
+  0%   { transform: scale(0.92); opacity: 0.8; }
+  60%  { transform: scale(1.2); opacity: 0; }
+  100% { transform: scale(1.2); opacity: 0; }
+}
+
+.free-label {
+  font-family: 'Black Ops One', var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  color: #f5d800;
+  line-height: 1;
+}
