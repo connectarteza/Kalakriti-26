@@ -107,7 +107,7 @@ export default function Schedule() {
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 clip-reveal w-full" style={{ animationDelay: '0.7s' }}>
             <a 
-              href="https://canva.link/dh2s6x0oed79k13"
+              href="https://drive.google.com/file/d/1spPA9YlZkktN6bcpo8gD77rQ6B7im8ud/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="relative overflow-hidden font-mono text-[11px] font-bold tracking-[4px] uppercase py-4 px-8 bg-transparent text-[var(--color-gold)] border border-[var(--color-gold)] transition-all duration-400 hover:bg-[var(--color-gold)] hover:text-[#0a0404] hover:shadow-[0_0_20px_rgba(201,168,76,0.3)] flex items-center justify-center gap-3 group w-full sm:w-auto"
