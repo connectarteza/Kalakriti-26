@@ -33,7 +33,7 @@ export const EVENTS = [
       "Late submissions will be disqualified."
     ],
     rules: [
-      "Reg. Fees : ₹350/- per entry",
+      "Reg. Fees : ₹200/- per entry",
       "No. of participants in one team : 3-7.",
       "Mode : Participants must upload their submissions Online, however top 5 films will be screened Offline."
     ],
@@ -60,7 +60,7 @@ export const EVENTS = [
       "Any form of misconduct or disturbance may lead to deduction of points or disqualification."
     ],
     rules: [
-      "Reg. Fees : ₹100/- per team",
+      "Reg. Fees : ₹20/- per team",
       "No. of participants in one team : 1-2"
     ],
     coordinators: [
@@ -87,7 +87,7 @@ export const EVENTS = [
       "Late submissions will be disqualified."
     ],
     rules: [
-      "Reg. Fees : ₹150 per entry",
+      "Reg. Fees : ₹50 per entry",
       "No. of participants in one team : 1-4",
       "Duration shouldn't exceed 2 mins."
     ],
@@ -117,7 +117,7 @@ export const EVENTS = [
       "All submissions must be completed within the specified time limit."
     ],
     rules: [
-      "Reg. Fees : ₹75/-",
+      "Reg. Fees : ₹25/-",
       "No. of participants in one team : 1.",
       "Theme : To Be Revealed Day Of"
     ],
@@ -142,11 +142,11 @@ export const EVENTS = [
       "All submitted photos must be in printed format.",
       "Plagiarism or use of non-original content is strictly prohibited.",
       "Registration is open for everyone, and there is no fee at the time of registration.",
-      "After participants will be selected, a fee of 100 will be taken only from those who are selected.",
+      "After participants will be selected, a fee of 50 will be taken only from those who are selected.",
       "Judges decision will be final."
     ],
     rules: [
-      "Reg. Fees : ₹100/-",
+      "Reg. Fees : ₹50/-",
       "No. of participants in one team : 1 [maximum 3 photo submissions per participant; only one best entry will be judged.]."
     ],
     coordinators: [
@@ -170,7 +170,7 @@ export const EVENTS = [
       "Basic editing is allowed, but plagiarism or use of non-original content is strictly prohibited."
     ],
     rules: [
-      "Reg. Fees : ₹50/-",
+      "Reg. Fees : ₹40/-",
       "No. of participants : 1.",
       "Theme : Beginning–Middle–End."
     ],
@@ -199,7 +199,7 @@ export const EVENTS = [
       "All participants must adhere strictly to the submission deadline; late entries will not be accepted."
     ],
     rules: [
-      "Reg. Fees : ₹80/-",
+      "Reg. Fees : ₹30/-",
       "No. of participants in one team : 1."
     ],
     coordinators: [
@@ -225,7 +225,7 @@ export const EVENTS = [
       "Colour Mediums : Sketch, Oil Pastel, Watercolour."
     ],
     rules: [
-      "Reg. Fees : ₹50/-",
+      "Reg. Fees : ₹30/-",
       "No. of participants in one team : 1.",
       "Theme : To be revealed day of.",
       "Time Limit : 1 hr 45 mins, 15 mins thinking time."
@@ -251,7 +251,7 @@ export const EVENTS = [
       "Exhibition : There is no particular theme, participants may choose one."
     ],
     rules: [
-      "Reg. Fees : ₹100/- per team.",
+      "Reg. Fees : ₹80/- per team.",
       "No. of participants in one team : 2.",
       "Theme : The theme is Art."
     ],
@@ -275,7 +275,7 @@ export const EVENTS = [
       "AI generated elements maybe used, but making of entire poster using AI will lead to immediate disqualification."
     ],
     rules: [
-      "Reg. Fees : ₹50/-",
+      "Reg. Fees : ₹20/-",
       "No. of participants in one team : 1."
     ],
     coordinators: [
@@ -297,7 +297,7 @@ export const EVENTS = [
       "Pencils and erasers will be provided, anything other than that must be brought by the participants."
     ],
     rules: [
-      "Reg. Fees : ₹70/-",
+      "Reg. Fees : ₹30/-",
       "No. of participants in one team : 1."
     ],
     coordinators: [
@@ -321,7 +321,7 @@ export const EVENTS = [
       "Use of hazardous or unsafe materials is strictly prohibited."
     ],
     rules: [
-      "Reg. Fees : ₹80/-",
+      "Reg. Fees : ₹0/-",
       "No. of participants in one team : 1-2.",
       "Participants can participate individually or in groups [maximum 1-2 members].",
       "Top 5 craft will be exhibited."
@@ -349,7 +349,7 @@ export const EVENTS = [
       "Participants aren't allowed to keep mobile phones or other devices during the competition."
     ],
     rules: [
-      "Reg. Fees : ₹80/-",
+      "Reg. Fees : ₹40/-",
       "No. of participants in one team : 1.",
       "Topic : To be revealed on the day of.",
       "Language : English."
@@ -376,7 +376,7 @@ export const EVENTS = [
       "The final is a Turncoat Debate, where teams switch sides mid-speech on a new topic."
     ],
     rules: [
-      "Reg. Fees : ₹200/- Per Team",
+      "Reg. Fees : ₹100/- Per Team",
       "No. of participants in one team : 2.",
       "Topic : Will be revealed 2 days before the competition.",
       "Language : English."
@@ -401,7 +401,7 @@ export const EVENTS = [
       "The selected piece should be appropriate for a formal academic setting and must not directly or indirectly offend any individual, community, or culture."
     ],
     rules: [
-      "Reg. Fees : ₹100/-",
+      "Reg. Fees : ₹50/-",
       "No. of participants in one team : 1.",
       "Time Limit : 4 + 1 mins, from empty stage to empty stage.",
       "Language : English, Bengali, and Hindi."
@@ -425,7 +425,7 @@ export const EVENTS = [
       "Participants will deliver a spontaneous speech on a given topic without prior preparation."
     ],
     rules: [
-      "Reg. Fees : ₹100/-",
+      "Reg. Fees : ₹30/-",
       "No. of participants in one team : 1.",
       "Time Limit : 30 secs[thinking time] + 1 min[speaking time].",
       "Topic : To be revealed on the spot at the time of participation.",
@@ -452,7 +452,7 @@ export const EVENTS = [
       "Participants can perform with their script in-hand."
     ],
     rules: [
-      "Reg. Fees : ₹250/- Per Team",
+      "Reg. Fees : ₹150/- Per Team",
       "No. of participants in one team : 3-5 voice artist Per Team, and one sound accompanist. Sound Accompanist wouldn't be performing.",
       "Time Limit : 10 mins [performance time] + 2 mins [soundcheck], empty stage to empty stage.",
       "Language : English, Bengali, and Hindi."
@@ -480,7 +480,7 @@ export const EVENTS = [
       "Format : 1v1 Faceoff, immediate elemination."
     ],
     rules: [
-      "Reg. Fees : ₹70/-",
+      "Reg. Fees : ₹50/-",
       "No. of participants in one team : 1.",
       "Type you can select : Either Situation-based acting or Mimicry/Impersonation.",
       "Acting Time : 2 + 1 mins.",
@@ -505,7 +505,7 @@ export const EVENTS = [
       "Any form of vulgar words or inappropriate gestures will lead to disqualification."
     ],
     rules: [
-      "Reg. Fees : ₹100/person",
+      "Reg. Fees : ₹50/person",
       "No. of participants in one team : 1-6.",
       "Theme : Stand-up comedy, Ventriloquism, Mime acting, Mono-act.",
       "Time Limit : 3 + 1 min.",
@@ -533,7 +533,7 @@ export const EVENTS = [
       "This format continues till one participant attains the figure N. The event comes to an end at that instant."
     ],
     rules: [
-      "Reg. Fees : ₹100/-",
+      "Reg. Fees : ₹0/-",
       "No. of participants in one team : 1.",
       "Participants can participate individually : OTSE registration allowed.",
       "Language : English, Hindi, Bengali."

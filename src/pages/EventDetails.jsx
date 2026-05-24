@@ -97,10 +97,28 @@ export default function EventDetails() {
             
             {/* Badge overlay on poster */}
             {event.badge && (
-              <div className="absolute -top-3 -right-3 font-display text-[0.65rem] tracking-[0.25em] uppercase py-2 px-4 bg-accent text-white font-bold z-30 shadow-[0_4px_20px_rgba(139,0,0,0.5)] border border-white/20">
+              <div className="absolute -top-3 -left-3 font-display text-[0.65rem] tracking-[0.25em] uppercase py-2 px-4 bg-accent text-white font-bold z-30 shadow-[0_4px_20px_rgba(139,0,0,0.5)] border border-white/20">
                 {event.badge}
               </div>
             )}
+
+            {/* Fee Badge overlay on poster */}
+            {(() => {
+              const feeRule = event.rules?.find(r => r.includes("Reg. Fees :"));
+              if (feeRule) {
+                const match = feeRule.match(/₹\s*(\d+)/);
+                if (match) {
+                  const amount = parseInt(match[1], 10);
+                  const feeText = amount === 0 ? "FREE" : `₹${amount}/-`;
+                  return (
+                    <div className="absolute -top-3 -right-3 font-display text-[0.8rem] tracking-[0.06em] py-2 px-4.5 bg-[#e50914] text-white font-black z-30 shadow-[0_6px_25px_rgba(229,9,20,0.5)] border border-[var(--color-gold)]/60 rounded-sm">
+                      {feeText}
+                    </div>
+                  );
+                }
+              }
+              return null;
+            })()}
           </div>
           
           {/* Action Buttons */}

@@ -180,8 +180,8 @@ export default function Hero() {
           {/* Micro-cards Stats (Gold Border) */}
           <div className="flex flex-wrap items-center gap-8 mb-12 stagger-reveal" style={{ animationDelay: '1.1s' }}>
             <div className="flex flex-col items-start border-t border-t-[var(--color-gold)] pt-3 w-32">
-              <span className="font-display text-[32px] font-bold text-white leading-none mb-1">1</span>
-              <span className="font-mono text-[9px] tracking-[3px] text-text-muted uppercase">Grand Day</span>
+              <span className="font-display text-[32px] font-bold text-white leading-none mb-1">2</span>
+              <span className="font-mono text-[9px] tracking-[3px] text-text-muted uppercase">Grand Days</span>
             </div>
             
             <div className="flex flex-col items-start border-t border-t-[var(--color-gold)] pt-3 w-32">

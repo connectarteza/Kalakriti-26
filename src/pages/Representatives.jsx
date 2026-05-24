@@ -337,6 +337,49 @@ export default function Representatives() {
           </div>
         </div>
 
+        {/* Important Guidelines / Information */}
+        <div className="max-w-[850px] mx-auto mb-16 p-5 md:p-6 bg-[#080606]/85 border border-[rgba(201,168,76,0.2)] rounded-sm shadow-[0_12px_40px_rgba(139,0,0,0.15)] relative z-10 flex flex-col md:flex-row gap-6 md:gap-8 justify-between text-left stagger-reveal">
+          {/* Decorative Corner Ornaments */}
+          <div className="absolute inset-1.5 pointer-events-none opacity-30 z-30">
+            <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-[var(--color-gold)]"></span>
+            <span className="absolute top-0 right-0 w-2 h-2 border-t border-r border-[var(--color-gold)]"></span>
+            <span className="absolute bottom-0 left-0 w-2 h-2 border-b border-l border-[var(--color-gold)]"></span>
+            <span className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-[var(--color-gold)]"></span>
+          </div>
+
+          <div className="flex-1 flex gap-4 items-start">
+            <div className="w-9 h-9 rounded-full bg-[rgba(201,168,76,0.06)] border border-[rgba(201,168,76,0.2)] flex items-center justify-center shrink-0 mt-0.5">
+              <i className="ri-information-line text-sm text-[var(--color-gold)]" />
+            </div>
+            <div>
+              <h4 className="font-display text-[10px] font-bold tracking-[2px] uppercase text-[var(--color-gold)] mb-1.5">Registration Process</h4>
+              <p className="text-[12px] text-white/70 leading-relaxed font-body">
+                If your college representative has not yet registered for KalaKriti&apos;26, kindly contact your college authority or administration for the registration process.
+              </p>
+            </div>
+          </div>
+          
+          <div className="hidden md:block w-px bg-[rgba(201,168,76,0.15)] shrink-0 self-stretch" />
+          
+          <div className="flex-1 flex gap-4 items-start">
+            <div className="w-9 h-9 rounded-full bg-[rgba(201,168,76,0.06)] border border-[rgba(201,168,76,0.2)] flex items-center justify-center shrink-0 mt-0.5">
+              <i className="ri-user-follow-line text-sm text-[var(--color-gold)]" />
+            </div>
+            <div>
+              <h4 className="font-display text-[10px] font-bold tracking-[2px] uppercase text-[var(--color-gold)] mb-1.5">Management Committee</h4>
+              <p className="text-[12px] text-white/70 leading-relaxed font-body mb-3">
+                In case no Representative has been registered from your college, please get in touch with the Management Committee of KalaKriti&apos;26 for further assistance.
+              </p>
+              <Link 
+                to="/#contact"
+                className="inline-flex items-center gap-1.5 text-[9px] font-mono font-bold tracking-[2px] text-[var(--color-gold)] hover:text-white uppercase transition-all duration-300 group/btn cursor-pointer py-1"
+              >
+                Contact Committee <i className="ri-arrow-right-line text-[10px] transition-transform group-hover/btn:translate-x-1" />
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* Loading Roster */}
         {loading ? (
           <div className="flex flex-col items-center justify-center py-20">

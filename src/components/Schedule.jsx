@@ -95,8 +95,8 @@ export default function Schedule() {
               <span className="font-mono text-[8px] tracking-[2px] text-white/50 uppercase text-center">Art<br/>Domains</span>
             </div>
             <div className="flex flex-col items-center justify-center p-4 border-r border-[var(--color-gold)]/45 transition-colors duration-300 hover:bg-[#3c0404]/30 group">
-              <span className="font-display text-[32px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="1"/></span>
-              <span className="font-mono text-[8px] tracking-[2px] text-white/50 uppercase text-center">Grand<br/>Day</span>
+              <span className="font-display text-[32px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="2"/></span>
+              <span className="font-mono text-[8px] tracking-[2px] text-white/50 uppercase text-center">Grand<br/>Days</span>
             </div>
             <div className="flex flex-col items-center justify-center p-4 transition-colors duration-300 hover:bg-[#3c0404]/30 group">
               <span className="font-display text-[36px] font-bold text-[var(--color-gold)] leading-none mb-2 transition-transform duration-300 group-hover:scale-[1.05] inline-block"><CountUp end="∞"/></span>

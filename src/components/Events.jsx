@@ -27,10 +27,28 @@ function EventCard({ event }) {
 
         {/* Badge */}
         {event.badge && (
-          <span className="absolute top-3 right-3 font-display text-[0.58rem] tracking-[0.22em] uppercase py-1 px-3 bg-accent text-white font-bold z-30 shadow-lg">
+          <span className="absolute top-0 left-0 font-display text-[0.58rem] tracking-[0.18em] uppercase py-1.5 px-3 bg-accent text-white font-bold z-30 shadow-lg border-r border-b border-white/10">
             {event.badge}
           </span>
         )}
+
+        {/* Fee Badge */}
+        {(() => {
+          const feeRule = event.rules?.find(r => r.includes("Reg. Fees :"));
+          if (feeRule) {
+            const match = feeRule.match(/₹\s*(\d+)/);
+            if (match) {
+              const amount = parseInt(match[1], 10);
+              const feeText = amount === 0 ? "FREE" : `₹${amount}/-`;
+              return (
+                <span className="absolute top-0 right-0 font-display text-[0.75rem] tracking-[0.06em] py-1.5 px-4 bg-[#e50914] text-white font-black z-30 shadow-[0_4px_15px_rgba(229,9,20,0.5)] border-l border-b border-[var(--color-gold)]/50 rounded-bl-sm">
+                  {feeText}
+                </span>
+              );
+            }
+          }
+          return null;
+        })()}
       </div>
 
       {/* Event Name */}

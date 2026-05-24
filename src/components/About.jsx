@@ -69,16 +69,16 @@ export default function About() {
           {/* Huge Gold Stats Row */}
           <div className="flex justify-center w-full mt-4 pt-10 border-t border-[var(--color-gold)]/30">
             <div className="flex flex-col items-center px-8 md:px-12 border-r border-white/10">
-              <span className="font-display text-[56px] font-bold text-[var(--color-gold)] leading-[1]">1</span>
-              <span className="font-mono text-[9px] tracking-[4px] text-white/30 uppercase mt-4">Grand Day</span>
+              <span className="font-display text-[56px] font-bold text-[var(--color-gold)] leading-[1]">2</span>
+              <span className="font-mono text-[9px] tracking-[4px] text-white/30 uppercase mt-4">Grand Days</span>
             </div>
             <div className="flex flex-col items-center px-8 md:px-12 border-r border-white/10">
               <span className="font-display text-[56px] font-bold text-[var(--color-gold)] leading-[1]">20+</span>
               <span className="font-mono text-[9px] tracking-[4px] text-white/30 uppercase mt-4">Events</span>
             </div>
             <div className="flex flex-col items-center pl-8 md:pl-12">
-              <span className="font-display text-[32px] mt-4 font-bold text-[var(--color-gold)] leading-[1] mb-[12px]">MSIT</span>
-              <span className="font-mono text-[9px] tracking-[4px] text-white/30 uppercase mt-[2px]">Campus Ground</span>
+              <span className="font-display text-[32px] mt-4 font-bold text-[var(--color-gold)] leading-[1] mb-[12px]">TBA</span>
+              <span className="font-mono text-[9px] tracking-[4px] text-white/30 uppercase mt-[2px]">Venue Announced Soon</span>
             </div>
           </div>
           
