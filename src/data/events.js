@@ -17,7 +17,7 @@ export const EVENTS = [
     category: 'videography',
     poster: '/Posters/KALPACHITRA.png',
     link: 'https://docs.google.com/forms/d/1N9YNwKCe2u72cc6caD5g65URfJ3T1my7qYnlOPz3DY8/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#17',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#17',
     badge: 'Online / Offline Scr.',
     tagline: 'Short-Film Competition',
     guidelines: [
@@ -49,7 +49,7 @@ export const EVENTS = [
     category: 'videography',
     poster: '/Posters/CINE-CHARCHA.png',
     link: 'https://docs.google.com/forms/d/1BXGDqECg3dcB3fk3AR3LITswxffIGl_b1NmwYhvIfBA/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#18',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#18',
     badge: 'Offline',
     tagline: 'Movie & Anime Quiz',
     guidelines: [
@@ -74,7 +74,7 @@ export const EVENTS = [
     category: 'videography',
     poster: '/Posters/ABHIVYAKTI.png',
     link: 'https://docs.google.com/forms/d/1wuUzj-6sqiT4jEFZ6prGP03z0EzK7W6ijRvwgxCwqLo/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#19',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#19',
     badge: 'Online',
     tagline: 'Vertical Short-Film Competition',
     guidelines: [
@@ -105,7 +105,7 @@ export const EVENTS = [
     category: 'photography',
     poster: '/Posters/SHUTTER HUNT.png',
     link: 'https://docs.google.com/forms/d/1X2qkPng1cw4WHyOwc-jTq5bHCNlq8K-2s8C92s8XdY0/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#22',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#22',
     badge: 'Offline',
     tagline: 'Photography Scavenger Hunt',
     guidelines: [
@@ -132,7 +132,7 @@ export const EVENTS = [
     category: 'photography',
     poster: '/Posters/LENS GALLERY.png',
     link: 'https://docs.google.com/forms/d/1Y3EGKck6kPMVg0PsqaUgBqS5_6Cpv63zFKPuzPAwzLE/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#23',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#23',
     badge: 'Online / Offline Exhib.',
     tagline: 'Photography Exhibition',
     guidelines: [
@@ -160,7 +160,7 @@ export const EVENTS = [
     category: 'photography',
     poster: '/Posters/TRILOGY.png',
     link: 'https://docs.google.com/forms/d/1EFHHu7-GkPUsqYQEgmnmUMdok0yqo_qTBLJErZEZFqM/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#20',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#20',
     badge: 'Online / Offline Scr.',
     tagline: 'Photography Storytelling',
     guidelines: [
@@ -185,7 +185,7 @@ export const EVENTS = [
     category: 'photography',
     poster: '/Posters/REFRAME.png',
     link: 'https://docs.google.com/forms/d/1TGto5xqd4Xqip0pwiOc5r1ATfZh1aiDDU2Reuy5IRnU/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#21',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#21',
     badge: 'Online / Offline Scr.',
     tagline: 'Photo Editing Competition',
     guidelines: [
@@ -215,7 +215,7 @@ export const EVENTS = [
     category: 'visual',
     poster: '/Posters/EASEL.png',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSeB2bWmjzIIQj_4b33TLBw_qAu_3Xmeu4q78DjaGM8FovWOWQ/viewform?usp=header',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#9',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#9',
     badge: 'Offline',
     tagline: 'On-Spot Painting / Sketching Competition',
     guidelines: [
@@ -241,7 +241,7 @@ export const EVENTS = [
     category: 'visual',
     poster: '/Posters/MASQUERADE.png',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSeS68CYaSq94K67ZcfJjsYTzTd8HzFL9eUlS3wi0A692X3oVA/viewform?usp=header',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#13',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#13',
     badge: 'Offline',
     tagline: 'Face Painting Competition',
     guidelines: [
@@ -266,7 +266,7 @@ export const EVENTS = [
     category: 'visual',
     poster: '/Posters/LIGHTS CAMERA RECREATE.png',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSe48kIi1RNH-v70WdOPGxxeJ7vsmZ1Dn1JUqMAT-3o75A69Yw/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#11',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#11',
     badge: 'Online',
     tagline: 'Bollywood Poster Remaking Competition',
     guidelines: [
@@ -289,7 +289,7 @@ export const EVENTS = [
     category: 'visual',
     poster: '/Posters/LAUGH LINES.png',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLScLpJkaIBAoN9OWicRm48-mBhlHiUQJVKXgsdTxaYYp1RjUXQ/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#12',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#12',
     badge: 'Offline',
     tagline: 'Caricature Making Competition',
     guidelines: [
@@ -311,7 +311,7 @@ export const EVENTS = [
     category: 'visual',
     poster: '/Posters/CRAFTOPIA.png',
     link: 'https://docs.google.com/forms/d/e/1FAIpQLSfni0xhE_-oucPqoyPMcr_EoQQq59eeBKPKZwhkxlW56wGJPg/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#10',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#10',
     badge: 'Online / Offline Exhib.',
     tagline: 'Craft Making Competition',
     guidelines: [
@@ -339,7 +339,7 @@ export const EVENTS = [
     category: 'writing',
     poster: '/Posters/IMPROMPTU.png',
     link: 'https://docs.google.com/forms/d/1_AsxksblvOnH1gwIqZ0Cbu-ULj-t5zhAPmsJstWT0YA/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#4',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#4',
     badge: 'Offline',
     tagline: 'Creative Writing Competition',
     guidelines: [
@@ -365,7 +365,7 @@ export const EVENTS = [
     category: 'writing',
     poster: '/Posters/CLASHPOINT.png',
     link: 'https://docs.google.com/forms/d/1aw6vvPSf21xh9fVMFuvaobUBZhrhxMh-FaZ-eGo7Mtw/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#5',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#5',
     badge: 'Offline',
     tagline: 'Debate Competition',
     guidelines: [
@@ -392,7 +392,7 @@ export const EVENTS = [
     category: 'writing',
     poster: '/Posters/ORATORIA.png',
     link: 'https://docs.google.com/forms/d/14-GeGI92IsUjdVijZfZbyVLF24yNWHaMTcyCra_bwUg/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#6',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#6',
     badge: 'Offline',
     tagline: 'Recitation Competition',
     guidelines: [
@@ -417,7 +417,7 @@ export const EVENTS = [
     category: 'writing',
     poster: '/Posters/EXTEMPO.png',
     link: 'https://docs.google.com/forms/d/1CbDf7balJ9oy-ICEUPcLl69H4LToo80Mrcl-hWpAiNs/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#7',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#7',
     badge: 'Offline',
     tagline: 'Extempore Competition',
     guidelines: [
@@ -442,7 +442,7 @@ export const EVENTS = [
     category: 'writing',
     poster: '/Posters/SONANCE.png',
     link: 'https://docs.google.com/forms/d/1aFrphyBHO7WZ-Hh8dKFF-Jcfl1tei4I2F5BNfJtgmIw/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#8',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#8',
     badge: 'Offline',
     tagline: 'Audio Drama Competition',
     guidelines: [
@@ -470,7 +470,7 @@ export const EVENTS = [
     category: 'performing',
     poster: '/Posters/ACT IT OUT.png',
     link: 'https://docs.google.com/forms/d/1-xjdt6f08e9vXh3785clzb1JbfEWn8rHhDKF3Bfmv74/viewform?ts=69f0b887',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#16',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#16',
     badge: 'Offline',
     tagline: 'Impromptu Acting & Mimicry Competition',
     guidelines: [
@@ -497,7 +497,7 @@ export const EVENTS = [
     category: 'performing',
     poster: '/Posters/I LAUGH YOU.png',
     link: 'https://docs.google.com/forms/d/1tlK2bQUL251PGbdW7snEGe0IiFbZvZy3axkcR5t_cmA/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#14',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#14',
     badge: 'Offline',
     tagline: 'Stand-up Comedy Competition',
     guidelines: [
@@ -522,7 +522,7 @@ export const EVENTS = [
     category: 'performing',
     poster: '/Posters/N 2 SMOKE.png',
     link: 'https://docs.google.com/forms/d/1cfLt5VtvaurV3d7zPORJuG7LS47ZkJ7QqkcL-KGft4M/viewform',
-    brochure: 'https://www.canva.com/design/DAHIXDXBqZw/AVsmf6vPyFxxhntkcokprw/view?utm_content=DAHIXDXBqZw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2684944354#15',
+    brochure: 'https://canva.link/dh2s6x0oed79k13#15',
     badge: 'Offline',
     tagline: 'Question Battle Competition',
     guidelines: [

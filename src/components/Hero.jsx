@@ -1,10 +1,21 @@
 import { useEffect, useState, useRef } from 'react';
 
 export default function Hero() {
-  const [scrollY, setScrollY] = useState(0);
+  const avatarRef = useRef(null);
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (avatarRef.current) {
+            avatarRef.current.style.transform = `translateY(${window.scrollY * -0.15}px)`;
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -208,8 +219,9 @@ export default function Hero() {
         <div className="relative w-full h-[70vh] min-h-[600px] flex items-center justify-center perspective-1000 mt-10 lg:mt-0">
           
           <div 
+            ref={avatarRef}
             className="relative w-full max-w-[550px] aspect-square flex items-center justify-center transform-3d animate-float-3d"
-            style={{ transform: `translateY(${scrollY * -0.15}px)` }}
+            style={{ transform: 'translateY(0px)' }}
           >
             
             {/* Free Floating Avatar Image without card frame */}

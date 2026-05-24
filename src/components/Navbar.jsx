@@ -29,19 +29,44 @@ export default function Navbar() {
   }, [popupOpen]);
 
   useEffect(() => {
+    let ticking = false;
+    let sectionElements = [];
+
+    const updateSections = () => {
+      sectionElements = NAV_ITEMS.map((item) => ({
+        id: item.id,
+        el: document.getElementById(item.id)
+      })).filter(item => item.el);
+    };
+
+    // Initialize and pre-cache section offsets
+    updateSections();
+    window.addEventListener('resize', updateSections);
+
     const onScroll = () => {
-      setScrolled(window.scrollY > 60);
-      const sections = NAV_ITEMS.map((item) => document.getElementById(item.id)).filter(Boolean);
-      const scrollY = window.scrollY + 200;
-      for (let i = sections.length - 1; i >= 0; i--) {
-        if (scrollY >= sections[i].offsetTop) {
-          setActiveSection(sections[i].id);
-          break;
-        }
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          setScrolled(window.scrollY > 60);
+          
+          const scrollY = window.scrollY + 200;
+          for (let i = sectionElements.length - 1; i >= 0; i--) {
+            const { id, el } = sectionElements[i];
+            if (scrollY >= el.offsetTop) {
+              setActiveSection(id);
+              break;
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
+
     window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', updateSections);
+    };
   }, []);
 
   const location = useLocation();
