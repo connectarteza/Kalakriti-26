@@ -30,7 +30,9 @@ export const cachedRepresentatives = [
     college: "The Heritage Academy",
     reps: [
       { name: "Ronit Paul", whatsapp: "6290464869", email: "ronit.paul.cs29@tha.edu.in" },
-      { name: "Devangsh Maru", whatsapp: "7439136936", email: "devangsh.maru.cs29@tha.edu.in" }
+      { name: "Devangsh Maru", whatsapp: "7439136936", email: "devangsh.maru.cs29@tha.edu.in" },
+      { name: "Dyuti Mondal", whatsapp: "9903276085", email: "dyutim06@gmail.com" },
+      { name: "Priyangshu Mondal", whatsapp: "8100074864", email: "mondalpriyanshu242@gmail.com" }
     ]
   },
   {
@@ -85,6 +87,45 @@ export const cachedRepresentatives = [
     college: "Heritage Institute of Technology",
     reps: [
       { name: "Rajib Ghosh", whatsapp: "8653530911", email: "rajibghoshjgm@gmail.com" }
+    ]
+  },
+  {
+    id: 12,
+    college: "Techno India University",
+    reps: [
+      { name: "Antarip Gupta", whatsapp: "8101959995", email: "antaripgupta@gmail.com" },
+      { name: "Biyas Ghosh", whatsapp: "6289192369", email: "biyasghosh1331@gmail.com" }
+    ]
+  },
+  {
+    id: 13,
+    college: "Institute of Management Study",
+    reps: [
+      { name: "Ayushi Dey", whatsapp: "6291855983", email: "deyayushi2004@gmail.com" },
+      { name: "Ankita Das", whatsapp: "6295603867", email: "ankitadasofficial771@gmail.com" }
+    ]
+  },
+  {
+    id: 14,
+    college: "JIS University",
+    reps: [
+      { name: "Ovik Ghosh", whatsapp: "8927961776", email: "ovikghosh9@gmail.com" },
+      { name: "Prasangsha Roy Choudhury", whatsapp: "6291242124", email: "prasangsa.11e.27062004@gmail.com" }
+    ]
+  },
+  {
+    id: 15,
+    college: "Sister Nivedita University",
+    reps: [
+      { name: "Kaeneat Nasim", whatsapp: "6202354720", email: "kaeneat.snu@gmail.com" },
+      { name: "Debdip Kundu", whatsapp: "9163814632", email: "debdipkcpsbp001@gmail.com" }
+    ]
+  },
+  {
+    id: 16,
+    college: "Techno International NewTown",
+    reps: [
+      { name: "Debapriya Das Purkayastha", whatsapp: "7603025143", email: "debapriyadaspurkayastha@gmail.com" }
     ]
   }
 ];
