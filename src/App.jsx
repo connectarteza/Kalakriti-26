@@ -12,7 +12,7 @@ export default function App() {
 
 
   return (
-    <BrowserRouter basename="kalakriti-26/">
+    <BrowserRouter basename="/">
       <Preloader />
       <Navbar />
       <Routes>

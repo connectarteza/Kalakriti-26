@@ -14,7 +14,7 @@ export default function MobileApp() {
 
   return (
     <div className="mobile-view-wrapper">
-      <BrowserRouter basename="kalakriti-26/">
+      <BrowserRouter basename="/">
         <Preloader />
         <Navbar />
         <Routes>
